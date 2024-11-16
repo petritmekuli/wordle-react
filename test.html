@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .image {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="wrapper">
+      <picture>
+        <source media="(min-width: 650px)" srcset="../../Desktop/bigimg.jpg" />
+        <source media="(min-width: 350px)"
+        srcset="../../Desktop/smallimg960x450.jpg" width: "650px" height:
+        "300px" />
+        <img
+          class="image"
+          src="../../Desktop/bigimg.jpg"
+          alt="AI generated
+        image"
+        />
+      </picture>
+      <div class="text">...</div>
+      <p id="viewportsize"></p>
+    </section>
+  </body>
+  <script>
+    // Get the viewport size
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    // Display the size inside the <p> tag
+    document.getElementById(
+      "viewportsize"
+    ).innerText = `Viewport Width: ${width}px, Viewport Height: ${height}px`;
+  </script>
+</html>

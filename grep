@@ -1,0 +1,2502 @@
+: 1680393168:0;echo 'cat -n .zsh_history | sort -t ";" -uk2 | sort -nk1 | cut -f2- > .zsh_short_history && mv .zsh_short_history .zsh_history' > zsh_history_duplication_cleanup.sh
+: 1680393230:0;history
+: 1680393248:0;vim ~/.zsh_history
+: 1680393724:0;ls
+: 1680393744:0;cd Sites
+: 1680393753:0;cd ..
+: 1680393832:0;vim ~/.zshrc
+: 1680393937:0;source ~/.zshrc
+: 1680394374:0;docker image ls
+: 1680394388:0;docker container ls
+: 1680394392:0;docker container ls -a
+: 1680394646:0;mkdir mysql && cd mysql
+: 1680394675:0;vim Dockerfile
+: 1680394843:0;cd Sites/test && cat Dockerfile
+: 1680395341:0;Docker build -t mysql:1.0.0 .
+: 1680395928:0;docker container run --name mysql_con 495244e1e032 
+: 1680396032:0;docker stop f10043d6ee46
+: 1680396063:0;docker rm f10043d6ee46
+: 1680396100:0;docker container run --name mysql_con -d 495244e1e032 
+: 1680396158:0;docker exec -it e00 sh
+: 1680447240:0;docker rm e00
+: 1680447332:0;which mysql
+: 1680447395:0;mysql --version
+: 1680447958:0;docker run -d --name mysql_container -e MYSQL_ROOT_PASSWORD=password mysql:5.7
+: 1680448063:0;docker rmi 495
+: 1680448132:0;docker exec -it mysql_container mysql -p
+: 1680449340:0;docker rm mysql_container 
+: 1680449574:0;docker run -p 3306:3306 --name my-mysql -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7
+: 1680449678:0;docker rm f97
+: 1680449770:0;docker run -p 3306:3306 --name mysql_container -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7
+: 1680450095:0;docker container mysql_container stop
+: 1680450473:0;history | grep -E "docker.*container"
+: 1680451208:0;history | grep "history"
+: 1680451318:0;(history | grep "docker") | grep "container"
+: 1680451525:0;docker container ls 
+: 1680451608:0;docker stop 4b
+: 1680451618:0;docker rm 4b
+: 1680451672:0;docker run -p 3307:3306 --name mysql_container -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7
+: 1680452430:0;docker run -p 3307:3306 --name mysql_container -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=docker  -d mysql:5.7
+: 1680452681:0;docker stop 7d
+: 1680452691:0;docker start 7d
+: 1680452937:0;docker run -p 3307:3306 --name mysql_container2 -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=docker  -d mysql:5.7
+: 1680453061:0;docker stop 36
+: 1680453286:0;docker volume ls
+: 1680453293:0;docker volume ls -q
+: 1680453371:0;docker volume prune
+: 1680473955:0;docker image ls 
+: 1680474611:0;find . -name Dockerfile
+: 1680474632:0;cd Dockerfile
+: 1680474637:0;cd test
+: 1680474866:0;rm -r actions 
+: 1680474890:0;mkdir php
+: 1680474893:0;cd php
+: 1680474909:0;vim pdo.php
+: 1680475273:0;valet paths
+: 1680475306:0;valet link
+: 1680475515:0;valet start
+: 1680475628:0;cd ~
+: 1680475730:0;valet links
+: 1680475855:0;cd Sites/php
+: 1681044640:0;cat pdo.php
+: 1681044773:0;touch Dockerfile
+: 1681047430:0;docker image ls -a
+: 1681047681:0;docker build -t nginx-php:1 .
+: 1681047706:0;mv php.php index.php
+: 1681047721:0;mv pdo.php index.php
+: 1681047737:0;vim index.php
+: 1681047932:0;vim nginx.conf
+: 1681048484:0;docker rm 7d 64
+: 1681048496:0;docker rm 7d4 64
+: 1681048502:0;docker rm 7d4 64e
+: 1681048529:0;docker remove 7d4e0543532d 64e51e6de9fa
+: 1681051356:0;history | grep "start"
+: 1681051368:0;docker start d5d
+: 1681051478:0;history | grep "docker run"
+: 1681051777:0;docker rmi 656
+: 1681051845:0;docker rm d5
+: 1681051863:0;docker stop d5d
+: 1681051901:0;docker rm d5d
+: 1681052608:0;docker exec -it 656 sh
+: 1681052626:0;docker exec -it 10d sh
+: 1681079554:0;echo '<h1>Petrit Mekuli</h1>' >> index.html
+: 1681079971:0;docker rmi -f 656
+: 1681080034:0;docker rm 10d
+: 1681080082:0;history | grep "build"
+: 1681080166:0;docker build -t nginx:1.0 .
+: 1681080218:0;docker container run --name nginx_con -d a7d 
+: 1681080293:0;docker container ls -qa
+: 1681080345:0;docker rm -f 6b17
+: 1681080540:0;docker run -d -p 81:80 nginx:1.0
+: 1681080573:0;vim index.html
+: 1681080690:0;docker rm -f 30a
+: 1681080717:0;docker rm -f 0b3f
+: 1681080735:0;docker rmi -f a7d2
+: 1681080826:0;docker rmi -f 6f00
+: 1681080844:0;docker rm -f 6f00
+: 1681080869:0;docker rmi -f nginx:1.0
+: 1681080955:0;docker rm -f nginx_con
+: 1681080999:0;docker rm 7852
+: 1681081011:0;docker rm -f 7852
+: 1681081114:0;pwd
+: 1681081527:0;mv nginx.conf ../
+: 1681081571:0;docker exec -it b8fd sh
+: 1681081750:0;mv nginx.conf php
+: 1681082255:0;mv php nginx.conf
+: 1681082449:0;docker build -t nginx:1.1 .
+: 1681087203:0;docker stop b8fd
+: 1681087210:0;docker start b8fd
+: 1681088526:0;docker stop $(docker container ls -q)
+: 1681088553:0;docker rm b8fd
+: 1681088572:0;docker rmi 20a9
+: 1681089016:0;rm -r .
+: 1681089032:0;mkdir server/etc
+: 1681089043:0;mkdir server
+: 1681089048:0;cd server
+: 1681089053:0;mkdir etc
+: 1681089061:0;cd etc
+: 1681089067:0;mkdir nginx
+: 1681089076:0;cd nginx
+: 1681089091:0;cd ../../
+: 1681089101:0;sudo rm -r php
+: 1681089131:0;history | grep "find"
+: 1681089139:0;find . -name php
+: 1681089162:0;find . -name posts
+: 1681089189:0;mkdir docker
+: 1681089192:0;cd docker
+: 1681089195:0;git init
+: 1681089225:0;git clone https://github.com/johnathanesanders/docker-nginx-fpm
+: 1681089243:0;mv docker-nginx-fpm ../
+: 1681089255:0;rm docker
+: 1681089261:0;rm -r docker
+: 1681089271:0;cd docker-nginx-fpm
+: 1681089506:0;vim build.sh
+: 1681089610:0;./build.sh
+: 1681089620:0;sudo ./build.sh
+: 1681089641:0;ll -a
+: 1681089749:0;chmod +x build.sh
+: 1681089852:0;docker build -t php-nginx . --no-cache\
+
+: 1681154729:0;cd Sites/
+: 1681155684:0;sudo rm -r test
+: 1681155690:0;mkdir test
+: 1681155755:0;vim default.conf
+: 1681155791:0;vim php-fpm.conf
+: 1681155843:0;docker build -t alpine-nginx-php8 .\
+: 1681156293:0;docker rmi 0e66 275c
+: 1681156311:0;docker rmi -f 0e66 275c
+: 1681156345:0;docker rm 1af0
+: 1681156429:0;docker run --name php-nginx-run -d -p 81:80 -p 443:443 php-nginx
+: 1681156458:0;docker rm php-nginx-run
+: 1681156695:0;docker rm -f f6ee
+: 1681156713:0;docker rm -f d97e
+: 1681156729:0;docker rmi -f d97e
+: 1681156846:0;docker exec -it 2364 bin/bash
+: 1681217349:0;cd src
+: 1681217391:0;vim ../Dockerfile
+: 1681217875:0;docker rm -f 2364
+: 1681217908:0;docker rmi -f php-nginx
+: 1681218105:0;mv index.php index2.php
+: 1681218238:0;docker start 3608
+: 1681219737:0;docker stop 3608
+: 1681221013:0;docker container rm e5b9
+: 1681221025:0;docker container rm -f e5b9
+: 1681221054:0;docker rmi php-nginx
+: 1681221500:0;cd /Users/petritmekuli/Sites/docker-nginx-fpm/src
+: 1681221915:0;telnet 127.0.0.1 3307\
+: 1681222238:0;mysql -u root -p -h 127.0.0.1 -P 3307
+: 1681222907:0;docker exec -it 3608 bin/bash
+: 1681223085:0;docker exec -it c2e5 sh
+: 1681224985:0;cd Sites/docker-nginx-fpm
+: 1681225004:0;docker network inspect bridge
+: 1681225662:0;docker network ls
+: 1681225675:0;docker inspect bridge
+: 1681225813:0;docker inspect mysql_container2
+: 1681226012:0;docker inspect php-nginx-run
+: 1681243036:0;docker start c2e5 7d2e
+: 1681245582:0;docker inspect mysql_container
+: 1681246208:0;vim manual-instructions.txt
+: 1681246867:0;cd Sites/docker-nginx-fpm/src
+: 1681247028:0;sh ~/zsh_history_duplication_cleanup.sh
+: 1681247091:0;docker run -d -p 3307:3306 --name test-mysql-container mysql:5.7
+: 1681247182:0;docker rm -f 128a3ccb8aad
+: 1681247231:0;docker rm -f 713
+: 1681247236:0;docker run -d -p 3307:3306 -e MYSQL_ROOT_PASSWORD=password --name mysql-container -it mysql:5.7\
+: 1681249398:0;docker rm $(docker container ls -qa)
+: 1681249436:0;docker rmi $(docker image ls -q)
+: 1681249740:0;docker inspect mysql-container
+: 1681254324:0;vim README.md
+: 1681254890:0;vim server
+: 1681254920:0;vim cd php
+: 1681255067:0;sudo rm -r *
+: 1681255103:0;docker rmi -f $(docker image ls -a)
+: 1681255136:0;docker container rm -f $(docker container ls -qa)
+: 1681255159:0;docker rmi -f $(docker image ls -q)
+: 1681255548:0;git branch
+: 1681255607:0;git branch dev
+: 1681255625:0;git status
+: 1681255726:0;echo "Create an environment step by step for nginx+php+mysql in alpine linux" > README.md
+: 1681255731:0;git add README.md
+: 1681255833:0;cz
+: 1681255943:0;git commit -m "initial commit"
+: 1681255996:0;git switch dev
+: 1681256156:0;git commit -m "init dev"
+: 1681256186:0;git branch first-stage
+: 1681256652:0;docker build -t alpine:3.14 .\
+: 1681256774:0;docker container run --name alpine_cont -d alpine:3.14 
+: 1681256912:0;docker build -t alpine_img:3.14 .\
+: 1681257054:0;docker exec -it alpine_cont sh
+: 1681258272:0;git log --oneline --graph --decorate
+: 1681258310:0;git reset HEAD~1
+: 1681258335:0;git switch first-stage
+: 1681258352:0;git add .
+: 1681258537:0;vim
+: 1681259193:0;docker image rm -f $(docker image ls -q)
+: 1681259586:0;docker logs alpine_cont
+: 1681259626:0;mkdir src
+: 1681259634:0;mv index.php src
+: 1681259663:0;vim ./cleanup.sh
+: 1681260136:0;chmod u+x cleanup.sh
+: 1681260150:0;ls -ll
+: 1681260164:0;./cleanup.sh
+: 1681260687:0;cd conf.d
+: 1681260815:0;vim php.ini
+: 1681479724:0;git diff HEAD~1
+: 1681479820:0;git diff HEAD
+: 1681517605:0;cd Sites/test
+: 1681517638:0;docker start alpine_cont
+: 1681520604:0;l
+: 1681520618:0;ls -a
+: 1681520630:0;ls -al
+: 1681588522:0;docker rm -f alpine_cont
+: 1681588562:0;history | grep "alpine_cont"
+: 1681588803:0;vim cleanup.sh
+: 1681588902:0;docker run -d --name alpine_cont -p 81:80 -it alpine_img:3.14\
+: 1681590890:0;mkdir alpine
+: 1681590895:0;cd alpine
+: 1681590899:0;vim Dockerifle
+: 1681591946:0;docker build -t nginx:1.21.1 .
+: 1681592604:0;docker exec -it nginx:1.21.1 sh
+: 1681592674:0;docker run -d --name nginx_cont -p 81:80 -it nginx:1.21.1\
+: 1681592693:0;docker run -d --name nginx_cont -p 82:80 -it nginx:1.21.1\
+: 1681592722:0;docker rm nginx:1.21.1
+: 1681592744:0;docker rm -f nginx_cont
+: 1681592799:0;docker exec -it nginx_cont sh
+: 1681593103:0;docker rm -f $(docker container ls -qa)
+: 1681595721:0;docker start nginx_cont
+: 1681596035:0;docker run -d --name nginx_cont -p 82:80 nginx:1.21.1 nginx -g "daemon off;"\
+: 1681596115:0;docker exec nginx_cont nginx -s quit\
+: 1681596240:0;docker run -d --name nginx_cont -p 80:80 -it nginx:1.21.1\
+: 1681599576:0;history | grep "mysql"
+: 1681599750:0;(history | grep "docker run")|grep "src"
+: 1681599804:0;docker run -d -p 3307:3306 -e MYSQL_ROOT_PASSWORD=password --name mysql-container -it mysql:5.7
+: 1681600001:0;docker run -d --name nginx_cont -p 81:80 -v ~/Sites/alpine:/usr/share/nginx/html -it nginx:1.21.1
+: 1681600034:0;touch test.php
+: 1681600041:0;rm test.php
+: 1681600957:0;docker build -t nginx:1.24-alpine .
+: 1681601048:0;hostname
+: 1681601066:0;uname -n
+: 1681602449:0;git clone https://github.com/erseco/alpine-php-webserver
+: 1681602463:0;cd alpine-php-webserver
+: 1681602481:0;cd rootfs
+: 1681602505:0;docker run -p 80:8080 erseco/alpine-php-webserver\
+: 1681602538:0;docker run -p 81:8080 erseco/alpine-php-webserver\
+: 1681602651:0;docker run -p 81:8080 -v ~/app:/var/www/html erseco/alpine-php-webserver
+: 1681602670:0;docker run -p 82:8080 -v ~/app:/var/www/html erseco/alpine-php-webserver
+: 1681602736:0;docker rm -f 460d6628f972
+: 1681602770:0;mkdir app
+: 1681602826:0;mv index.php index.html
+: 1681602844:0;mv index.html app
+: 1681602855:0;mv app ../
+: 1681744099:0;cd app
+: 1681744415:0;docker volume rm $(docker volume ls -q)
+: 1681744722:0;docker run -d --name nginx_cont -p 81:80 -it nginx:1.24-alpine
+: 1681746585:0;docker run -d --name nginx_cont -p 81:80 -v $(pwd):/usr/share/nginx/html -it nginx:1.24-alpine
+: 1681747689:0;docker logs nginx_cont
+: 1681750549:0;docker stop nginx_cont
+: 1681773185:0;docker container logs --tail 0 --size 0 CONTAINER_NAME_OR_ID\
+: 1681773200:0;docker container logs --help
+: 1681774993:0;cd serverl
+: 1681775197:0;cd php-fpm.d
+: 1681775202:0;vim www.conf
+: 1681777468:0;rm nginx.conf
+: 1681779450:0;cd php-fpm-d
+: 1681779603:0;mv index.html src
+: 1681779859:0;docker run -d --name nginx_cont -p 81:80 -v $(pwd)/src:/usr/share/nginx/html -it nginx:1.24-alpine
+: 1681780007:0;find . -name php8-fpm.sock
+: 1681780273:0;sh build.sh
+: 1681780344:0;docker exec -it php-nginx-run sh
+: 1681826980:0;cd ../alpine
+: 1681827595:0;cd server/nginx
+: 1681827604:0;cd server/etc/nginx
+: 1681831803:0;rm alpine app test
+: 1681831819:0;sudo rm -r alpine app test
+: 1681831851:0;sudo rm -r alpine-php-webserver
+: 1681831860:0;vim test.php
+: 1681832906:0;docker run -d --name nginx_cont -p 81:80 -v $(pwd)/src:/var/www/html -it nginx:1.24-alpine
+: 1681849898:0;cd Sites/app
+: 1681852612:0;rm -r src
+: 1681852850:0;docker build -t centos:latest .
+: 1681852942:0;docker run -d --name centos_cont -it centos:latest
+: 1681852961:0;docker exec -it nginx_cont bin/bash
+: 1681852969:0;docker exec -it centos_cont bin/bash
+: 1681868067:0;docker run -d -p 81:80 --name centos_cont -it centos:latest
+: 1681916497:0;docker logs centos_cont
+: 1681918699:0;echo "<php phpinfo(); ?>" >> index.php
+: 1681918894:0;docker build -t centos:test .
+: 1681919078:0;mkdir confings
+: 1681919113:0;vim nginx.repo
+: 1681919211:0;mv nginx.repo configs
+: 1681919220:0;cd configs
+: 1681919235:0;mv confings configs
+: 1681919277:0;rm configs
+: 1681919303:0;cd 
+: 1681919309:0;cd /
+: 1681919344:0;echo "test" > test.php
+: 1681919351:0;mv configs test
+: 1681919364:0;mv test configs
+: 1681919401:0;mv test.php nginx.repo
+: 1681920053:0;vim start.sh
+: 1681920711:0;vim dockerfile
+: 1681920885:0;docker image rm centos:test
+: 1681922102:0;docker stop centos_cont
+: 1681922124:0;docker run -d -p 81:80 --name centos_test -it centos:test
+: 1681922172:0;docker exec -it centos_test bin/bash
+: 1681922280:0;docker exec -it centos_test /bin/bash\
+: 1681945781:0;docker start centos_cont
+: 1681945883:0;docker start centos_test
+: 1681946377:0;docker logs centos_test
+: 1681946786:0;rn src public
+: 1681947456:0;docker run -d --name centos_cont -p 81:80 -v $(pwd):/usr/share/nginx/html -it centos_test
+: 1681947482:0;docker run -d --name centos_cont -p 81:80 -v $(pwd):/usr/share/nginx/html -it centos:test
+: 1681947580:0;docker build -t centos_img:1.0 .
+: 1681947594:0;docker run -d --name centos_cont -p 81:80 -v $(pwd):/usr/share/nginx/html -it centos_img:v1
+: 1681947604:0;docker run -d --name centos_cont -p 81:80 -v $(pwd):/usr/share/nginx/html -it centos_img:1.0
+: 1681948477:0;cd ../app
+: 1681948602:0;chmod +xo cleanup.sh
+: 1681948610:0;ls -l
+: 1681948694:0;vim setup.sh
+: 1681948738:0;chmod +xg setup.sh
+: 1681948760:0;whoami
+: 1681948773:0;./setup.sh
+: 1681949189:0;chmod o+x start.sh
+: 1681949196:0;:wq
+: 1681949279:0;docker exec -it centos_cont /bin/bash\
+: 1681949507:0;vim configs/default.conf
+: 1681949627:0;mv src/index.php ../index.php
+: 1681949643:0;mv index.php app
+: 1681949650:0;rm src
+: 1681950081:0;$(pwd)
+: 1681950085:0;pwc
+: 1681950126:0;docker run -d --name centos_cont -p 81:80 -v pwd:/usr/share/nginx/html -it centos_img:1.0
+: 1681950192:0;history | grep pwd
+: 1681950875:0;docker run -d --name centos_cont -p 81:80 -v /Users/petritmekuli/Sites/app:/usr/share/nginx/html -it centos_img:1.0
+: 1682339743:0;ls -1
+: 1682339755:0;ls -s1
+: 1682340199:0;sh setup.sh
+: 1682340615:0;sh cleanup.sh
+: 1682340994:2511;docker exec -it centos_cont /bin/bash
+: 1682343565:0;c setup.sh ../alpine/setup.sh
+: 1682343585:0;cat setup.sh ../alpine/setup.sh
+: 1682343639:0;cp setup.sh ../alpine/setup.sh
+: 1682343718:0;cp cleanup.sh ../alpine/cleanup.sh
+: 1682343769:0;cp configs ../alpine/configs
+: 1682343853:0;cp -r configs ../alpine/configs
+: 1682343992:0;cd ../../app
+: 1682346149:0;rm -r configs
+: 1682346192:0;cd ../alpine/configs
+: 1682346269:0;cp start.sh ../alpine
+: 1682346314:0;cp index.php ../alpine
+: 1682346678:0;rm nginx.repo
+: 1682346834:0;ls -l1
+: 1682346861:0;cat setup.sh
+: 1682346956:0;docker run --help
+: 1682347028:0;docker build -t alpine_img:1.0 .
+: 1682347958:0;docker run -d --name alpine_cont -p 81:80 -v pwd:/usr/share/nginx/html -it alpine_img:1.0
+: 1682348158:0;docker rm a5e2b30bbbb0056c2548c30f3b4e419cd3c386cbd461022a56bf538f9aedc8af
+: 1682348168:0;docker rm -f a5e2b30bbbb0056c2548c30f3b4e419cd3c386cbd461022a56bf538f9aedc8af
+: 1682353300:0;docker image ls a
+: 1682354049:0;docker run -d --name alpine_cont -p 81:80 -v /Users/petritmekuli/Sites/alpine:/usr/share/nginx/html -it alpine_img:1.0
+: 1682354202:0;docker run -d --name alpine_cont -p 81:80 -it alpine_img:1.0
+: 1682354899:0;docker exec -it c391 sh
+: 1682354952:0;docker logs c391
+: 1682355242:0;docker logs d21
+: 1682356529:0;docker contianer ls
+: 1682356620:0;docker exec -it alpine_img sh
+: 1682357224:0;ls\
+: 1682357579:0;docker stop alpine_cont
+: 1682359640:0;cd ../
+: 1682359941:0;rm index.php
+: 1682360080:0;rm index.html
+: 1682362019:0;chown nginx:nginx index.php
+: 1682362028:0;cat /etc/passwd
+: 1682362034:0;cat /etc/passwd | grep -E "root|nginx"\
+: 1682372545:0;cd Sites/alpine
+: 1682374735:0;mkdir conf.d
+: 1682374743:0;mv default.conf conf.d
+: 1682376587:0;vim configs/conf.d/default.conf
+: 1682376795:0;cd configs/
+: 1683044026:0;vim error.log
+: 1683045507:0;cd ..\ls
+: 1683045525:0;docker images ls
+: 1683046270:0;cd ../..
+: 1683052733:0;server {\
+	listen 81;\
+		add_header Cache-Control "no-cache, no-store, must-revalidate"; \
+: 1683052830:0;vim conf.d/default.conf
+: 1683052930:0;rm default.conf
+: 1683052955:0;docker logs
+: 1683116943:0;vi nginx.conf
+: 1683116991:0;vi default.conf
+: 1683117008:0;cd /Sites/alpine
+: 1683120867:0;vim Dockerfile 
+: 1683121261:0;sh ../alpine/cleanup.sh
+: 1683121400:0;cd Sites/alpine && vim Dockerfie
+: 1683121406:0;cd Sites/alpine && vim Dockerfile
+: 1683124521:0;vim configs/nginx.repo
+: 1683124622:0;docker container rm -f d05238713301fd93515f62b3598c2676fe4166adfc100a0482e0a513345593b4
+: 1683146060:0;sudo rm -r alpine
+: 1683146178:0;composer --v
+: 1683146183:0;composer -v
+: 1683146194:0;docker-compose -v
+: 1683146217:0;mkdir compose
+: 1683146222:0;cd compose
+: 1683146318:0;touch docker-compose.yml
+: 1683146333:0;mkdir configs
+: 1683146368:0;vim docker-compose.yml
+: 1683146656:0;sudo rm /usr/local/bin/docker-compose\
+: 1683146668:0;sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose\
+: 1683146678:0;sudo chmod +x /usr/local/bin/docker-compose\
+: 1683146686:0;docker-compose --version\
+: 1683146882:0;sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-Darwin-x86_64" -o /usr/local/bin/docker-compose\
+: 1683725966:0;docker contianer ls -a
+: 1683726123:0;ls | grep test
+: 1683726846:0;cd start.sh
+: 1683727774:0;vim docke-compose.yml
+: 1683728320:0;git clone https://github.com/aschmelyun/video-laravel-docker-deployment
+: 1683728370:0;mv video-laravel-docker-deployment docker-compose
+: 1683728396:0;mv docker-compose ../
+: 1683728417:0;rm -r test
+: 1683728431:0;cd docker-compose
+: 1683728472:0;rm -r .git
+: 1683728487:0;sudo rm -r .gi
+: 1683728492:0;sudo rm -r .git
+: 1683728910:0;docker-compose build && docker-compose up -d
+: 1683729250:0;docker exec -it docker-compose-php sh
+: 1683729275:0;docker exec -it 484d sh
+: 1683729523:0;rm -r public
+: 1683729547:0;composer create-project laravel/laravel .
+: 1683729640:0;vim User.php
+: 1683729649:0;rm -r app
+: 1683729669:0;cd database
+: 1683729790:0;docker-compose down
+: 1683729976:0;rm -r docker-compose
+: 1683730811:0;mv video-laravel-docker-deployment ../docker-compose
+: 1683730895:0;rm -r src && mkdir src
+: 1683731949:0;docker exec -it ph sh
+: 1683731952:0;docker exec -it php sh
+: 1683732066:0;cd routes
+: 1683732072:0;vim web.php
+: 1683732250:0;vim docker-compose.prod.yml
+: 1683734509:0;docker exec -it nginx sh
+: 1683734545:0;docker-compose.yml
+: 1683742157:0;cd ../src/
+: 1683742161:0;cd public
+: 1683742224:0;cd /Sites
+: 1683742237:0;cd ~/Sites
+: 1683742250:0;sudo rm -r docker-compose
+: 1683742291:0;cd video-laravel-docker-deployment
+: 1683742373:0;vim docker-compose
+: 1683743111:0;sudo rm -r src && mkdir src
+: 1683743607:0;rm -r ./*
+: 1683744221:0;mkdir public
+: 1683744235:0;touch public/index.php
+: 1683744240:0;vim public/index.php
+: 1683744377:0;composer --version
+: 1683744991:0;docker-compose run --rm composer create-project laravel/laravel .
+: 1683745128:0;history | grep "rm"
+: 1683745471:0;cd artisan
+: 1683745690:0;docker-compose run --rm php artisan migrate
+: 1683745720:0;docker-compose run --rm php /var/www/html/artisan migrate
+: 1683745768:0;cd laravel
+: 1683745786:0;ls | grep ".env"
+: 1683745793:0;code .
+: 1683745821:0;vim .env
+: 1683745835:0;cd ../docker-compose
+: 1683746022:0;cd Sites/docker-compose
+: 1683746209:0;history | grep mysql_cont
+: 1683746227:0;docker exec -it mysql_container homestead -p
+: 1683746237:0;docker exec -it mysql homestead -p
+: 1683746338:0;history | grep mysql
+: 1683747805:0;mysql -u homestead -p -h 127.0.0.1 -P 3307
+: 1683748008:0;mysql -u homestead -p -h 0.0.0.0 -P 3307
+: 1683748230:0;docker-compose exec -it php /var/www/html/artisan tinker
+: 1683748910:0;docker compose up -d
+: 1683749195:0;vim ../docker-compose.yml
+: 1683749733:0;vim ../docker-compose.prod.yml
+: 1683798688:0;docker-compose ps
+: 1683800050:0;docker-compose up -d --build
+: 1683800344:0;ls /src
+: 1683800349:0;ls src
+: 1683800396:0;cp docker-compose docker-compose-final
+: 1683800609:0;vim routes/web.php
+: 1683800705:0;mysql -u user -p -h 0.0.0.0 -P 3307
+: 1683801609:0;cp -r docker-compose laravel-docker-compose
+: 1683801624:0;cd laravel-docker-compose
+: 1683802010:0;ll
+: 1683802074:0;history | grep chmod
+: 1683802107:0;chmod o+x setup.sh
+: 1683802142:0;chmod 755 setup.sh
+: 1683802481:0;git commit -m "base environment for laravel app using docker-compose"
+: 1683802611:0;git remote add origin https://github.com/petritmekuli/laravel-docker-compose.git
+: 1683802620:0;git push -u origin main
+: 1683802876:0;git commit -m "basic environment for Laravel app using docker-compose"
+: 1683802888:0;git git remote add origin https://github.com/petritmekuli/laravel-docker-compose.git
+: 1683802902:0;git branch -M main
+: 1683819516:0;vim src/read.md
+: 1683819926:0;mv src/read.md src/README.md
+: 1683819932:0;ls src/
+: 1683819943:0;cat src/README.md
+: 1683894488:0;git log --oneline
+: 1683894497:0;git rebase -i e35ef47
+: 1683894564:0;git rebase -i
+: 1683894625:0;git rebase --continue
+: 1683894842:0;git reset e35
+: 1683894897:0;cd Sites/laravel-docker-compose
+: 1683894953:0;git rebase --abort
+: 1683894970:0;git reset e35ef47
+: 1683895039:0;git commit --amend --no-edit
+: 1683895092:0;git log 
+: 1683896395:0;mkdir laravel-docker-compose-final
+: 1683896407:0;cd laravel-docker-compose-final
+: 1683896434:0;rm -r laravel-docker-compose-final
+: 1683896460:0;git clone https://github.com/petritmekuli/laravel-docker-compose
+: 1683896505:0;mv laravel-docker-compose laravel-docker-compose-copy
+: 1683896611:0;cp ../laravel-docker-compose-copy/src/README.md src/README.md
+: 1683896624:0;vim src/README.md
+: 1683896778:0;mv src/README.md
+: 1683896822:0;mv src/README.md src/explanation.md
+: 1683897408:0;vim ../laravel-docker-compose-copy
+: 1683897420:0;vim ../laravel-docker-compose-copy/Dockerfile
+: 1683897875:0;cd Sites/laravel-docker-compose-copy
+: 1683898566:0;git branch modify-and-upgrade
+: 1683898605:0;git reset b280e28
+: 1683898631:0;git checkout modify-and-upgrade
+: 1683898671:0;git branch -h
+: 1683898702:0;git branch -D modify-and-upgrade
+: 1683898712:0;git checkout master
+: 1683898801:0;git restore --staged .
+: 1683898813:0;git restore .
+: 1683898822:0;git pull
+: 1683898890:0;cp ../laravel-docker-compose-copy/src/README.md src/explanation.md
+: 1683898906:0;cat src/explanation.md
+: 1683898938:0;git branch 
+: 1683899756:0;vim ../laravel-docker-compose-copy/docker-compose.yml
+: 1683899832:0;mkdir mysql
+: 1683899844:0;rm -r mysql
+: 1683900113:0;cd ../laravel-docker-compose-copy
+: 1683900594:0;ls mysql
+: 1683901134:0;git reset bb07be9
+: 1683901291:0;ls mysql 
+: 1683901454:0;cp ../laravel-docker-compose-copy/setup.sh ./setup.sh
+: 1683901813:0;docker-compose exec -it mysql mysql -u user -p -h 0.0.0.0 -P 3306
+: 1683903891:0;git fetch origin
+: 1683903930:0;git push origin modify-and-upgrade
+: 1685618435:0;git clone https://github.com/petritmekuli/test-pm2.git 
+: 1685618443:0;cd test-pm2
+: 1685618523:0;vim test.txt
+: 1685618838:0;history | grep -E "switch|checkout"
+: 1685618946:0;git switch -c second-feature
+: 1685618952:0;git che
+: 1685618957:0;dd
+: 1685618976:0;git switch -
+: 1685619031:0;git commit -m "add more text to test.txt file"
+: 1685619095:0;git config --list
+: 1685619124:0;git config --get remote.origin.url\
+: 1685619149:0;git config
+: 1685619385:0;git push origin
+: 1685619399:0;git push origin main
+: 1685619655:0;git push origin second-feature:main
+: 1685619775:0;git commit -m "fix first char to uppercase"
+: 1685619791:0;git push origin second-feature
+: 1685620142:0;sudo rm -r test-pm2
+: 1685620160:0;git clone https://github.com/petritmekuli/test-pm2.git
+: 1685620239:0;git switch -c third-branch
+: 1685620366:0;git commit -m "third branch first commit"
+: 1685620437:0;git commit -m "third branch second commit"
+: 1685620563:0;git branch -m third-feature
+: 1685620613:0;git push origin third-feature
+: 1685622185:0;git log --oneline --decorate
+: 1685623963:0;git fetch
+: 1685624285:0;code explaining-laravel
+: 1685651736:0;rm -r laravel-docker-compose-copy
+: 1685651752:0;sudo rm -r laravel-docker-compose-copy
+: 1685651797:0;sudo rm -r test test-pm2 laravel
+: 1685651815:0;sudo rm -r actions compose
+: 1685651834:0;cd learning
+: 1685651845:0;cd explaining-facades
+: 1685651966:0;cd try-it-here
+: 1685651995:0;cd tests
+: 1685652001:0;cd Feature
+: 1685652009:0;vim CustomerViewMailTest.php
+: 1685652093:0;code 
+: 1685652167:0;cd explaining-laravel/
+: 1685652220:0;git switch main
+: 1685652236:0;git config -l
+: 1685652301:0;vim app/Http/Middleware/CacheResponseMiddleware.php.php
+: 1685652511:0;git diff --staged
+: 1685652681:0;mv app/Http/Middleware/CacheResponseMiddleware.php.php app/Http/Middleware/CacheResponseMiddleware.php 
+: 1685652765:0;git diff app/Http/Middleware/CacheResponseMiddleware.php  
+: 1685653660:0;git clean -df
+: 1685654728:0;git remote add origin https://github.com/petritmekuli/explaining-laravel.git
+: 1685654796:0;git push -u origin validation
+: 1685654804:0;git push -u origin testing
+: 1685654817:0;git push -u origin rate_limiting
+: 1685654836:0;git push -u origin exception
+: 1685654852:0;git push -u origin develop
+: 1685654881:0;git push -u origin debugbar
+: 1685654897:0;git push -u origin cache
+: 1685654907:0;git push -u origin autoloader
+: 1685654918:0;git push -u origin authentication
+: 1685654939:0;git push -u origin architecture_concepts
+: 1685654949:0;git push -u origin ajax
+: 1685654957:0;git switch test
+: 1685655017:0;git push -u origin test
+: 1685655051:0;git clone https://github.com/petritmekuli/explaining-laravel.git
+: 1685655094:0;sudo rm -r explaining-laravel
+: 1685655135:0;git clone https://github.com/petritmekuli/explaining-laravel.git ajax
+: 1685655140:0;cd ajax
+: 1685655164:0;git diff HEAD~
+: 1685655249:0;cd ../app/View/
+: 1685655315:0;cd resources/views/profile
+: 1685655324:0;vim edit.blade.php
+: 1685655344:0;cd ...
+: 1685655378:0;cd routes/
+: 1685655529:0;git checkout ajax
+: 1685655587:0;git switch ajax
+: 1685655644:0;cd Sites && sudo rm -r test
+: 1685655657:0;cd explaining-laravel/app
+: 1685656060:0;cd petritmekuli
+: 1685704766:0;git clone https://github.com/petritmekuli/laravel-docker-compose.git test
+: 1685705277:0;vim explanation.md
+: 1685705312:0;rm explanation.md
+: 1685706623:0;vim ../setup.sh
+: 1685706886:0;docker-compose run --rm composer laravel --version
+: 1685706973:0;docker-compose run --rm php /var/www/html/artisan --version
+: 1685709095:0;docker-compose run --rm php /var/www/html/artisan test
+: 1685713119:0;git remote set-url origin https://github.com/petritmekuli/test.git
+: 1685713187:0;git branch --help
+: 1685713235:0;git branch -m master main
+: 1685713527:0;rm README.md
+: 1685713587:0;git commit -m "fresh new Laravel application"
+: 1685714334:0;history | grep "docker build"
+: 1685714425:0;ls nginx
+: 1685714433:0;cat Dockerfile
+: 1685714758:0;cat Docker
+: 1685714797:0;docker build -t nginx:stable-alpine ./nginx
+: 1685714808:0;docker build -t nginx:stable-alpine
+: 1685714847:0;docker build -t nginx:stable-alpine .
+: 1685716231:0;history | grep "network"
+: 1685716455:0;vim ss.sh
+: 1685719172:0;chmod o+x ss.sh
+: 1685719212:0;sh ./ss.sh
+: 1685719314:0;docker run -d \\
+: 1685719703:0;docker exec -it mysql mysql -u user -p -h 0.0.0.0 -P 3306
+: 1685719924:0;docker --version
+: 1685720404:0;cd src && ls
+: 1685720847:0;history | grep -- "--rm"
+: 1685720894:0;history | grep exec
+: 1685721328:0;docker exec ea5f7ed0657a nginx --version
+: 1685721339:0;docker exec ea5f7ed0657a ls
+: 1685721357:0;docker exec ea5f7ed0657a nginx -v
+: 1685721602:0;docker exec fa58c93572b6 php /var/www/html/artisan test
+: 1685721620:0;docker exec ea5f7ed0657a php /var/www/html/artisan test
+: 1685721642:0;docker exec efca192d0593 php /var/www/html/artisan test
+: 1685721769:0;vim action.yml
+: 1685794820:0;docker container rm d31
+: 1685795136:0;docker start nginxx
+: 1685795198:0;docker start mysql
+: 1685795229:0;docker exec mysql ls
+: 1685795854:0;docker start php
+: 1685795871:0;docker exec php php /var/www/html/artisan test
+: 1685797577:0;history | grep "volume"
+: 1685797928:0;history | grep -E "laravel|docker"
+: 1685797981:0;history | grep "docker" | grep "laravel"
+: 1685798014:0;history | grep "volume" | grep "laravel"
+: 1685798042:0;history | grep "docker" | grep "laravel" >> vim
+: 1685798052:0;vim vim
+: 1685798071:0;rm vim
+: 1685798128:0;docker volume create laravel
+: 1685798165:0;docker volume rm laravel
+: 1685799263:0;ls -l | grep ".env" 
+: 1685799298:0;ls -la
+: 1685824132:0;vim .env.example
+: 1686826646:0;cd laravel-toolbox
+: 1686826712:0;git checkout middleware
+: 1686833440:0;ls ../
+: 1686833455:0;ls ../docker-compose
+: 1686833473:0;vim ../docker-compose/docker-compose.yml
+: 1686833603:0;history | grep docker-compose
+: 1686833637:0;history | grep docker-compose up
+: 1686833656:0;history | "grep docker-compose up"
+: 1686833675:0;history | grep "docker-compose up"
+: 1689328275:0;ls test
+: 1689328296:0;vim test/Dockerfile
+: 1689328328:0;vim composer.json
+: 1693828957:0;..
+: 1693829071:0;less Dockerfile
+: 1693830335:0;ls server
+: 1693830346:0;ls server/etc/php
+: 1693830361:0;cd server/etc/php/php-fpm.d
+: 1693830368:0;less www.conf
+: 1693830436:0;less php-fpm.conf
+: 1693830466:0;cd ~/Sites/
+: 1693830495:0;less build.sh
+: 1693830779:0;ls app
+: 1693830853:0;ls configs
+: 1693830872:0;less configs/nginx.repo
+: 1693830916:0;less configs/default.conf\
+: 1693830956:0;less setup.sh
+: 1693830992:0;less start.sh
+: 1693831031:0;sh start.sh
+: 1693831339:0;../..
+: 1693831372:0;less index.php
+: 1693833318:0;docker pull composer:latest
+: 1693833409:0;docker run -d --name composer_test -it composer:latest
+: 1693833448:0;docker logs 502c4671e380
+: 1693833625:0;docker run --rm --interactive --tty composer:latest
+: 1693833716:0;docker run --rm --interactive --tty composer --version
+: 1693843434:0;php --version
+: 1693843457:0;brew list | grep php
+: 1693843550:0;brew uninstall php
+: 1693843585:0;sudo rm -rf /usr/local/Cellar/php/8.1.3_1
+: 1693843645:0;sudo mysql.server stop\
+: 1693843656:0;brew uninstall mysql\
+: 1693843672:0;sudo rm -rf /usr/local/mysql\
+: 1693843727:0;less /etc/my.cnf
+: 1693843745:0;cd Shared
+: 1693843782:0;mysql -u root -p\
+: 1693843787:0;DROP USER 'username'@'localhost';\
+: 1693844074:0;docker pull mysql:8
+: 1693844340:0;LS
+: 1693844412:0;mkdir mysql-volumes
+: 1693844647:0;mkdir mysql-volumes/mysql8
+: 1693844651:0;ls mysql-volumes
+: 1693844659:0;docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password --name mysql8-container -v $(pwd)/mysql-volumes/mysql8:/etc/mysql/conf.d  -it mysql:8
+: 1693844749:0;mysql -u root -p
+: 1693845325:0;mysql -u root -p -h 127.0.0.1 -P 3306
+: 1693845490:0;docker exec -it mysql8-container
+: 1693845518:0;docker exec -it mysql8-container sh
+: 1693845592:0;mysql -u root -p -h 0.0.0.1 -P 3306
+: 1693846007:0;docker exec -it mysql8-container bash
+: 1693846351:0;docker run --name mysql8-container -e MYSQL_ROOT_PASSWORD=password -d mysql:8
+: 1693846492:0;cd mysql-volumes
+: 1693846498:0;cd mysql8
+: 1693846630:0;docker run -d -e MYSQL_ROOT_PASSWORD=password --name mysql8-container -v $(pwd)/mysql-volumes/mysql8:/etc/mysql/conf.d mysql:8
+: 1693846809:0;docker logs mysql8-container
+: 1693846905:0;cd mysql-volumes/mysql8
+: 1693846972:0;docker run -d -e MYSQL_ROOT_PASSWORD=password --name mysql8-container -v /Users/petritmekuli/mysql-volumes/mysql8:/etc/mysql/conf.d mysql:8
+: 1693847034:0;docker logs mysql-container
+: 1693847506:0;ls mysql-volumes/mysql8
+: 1693847521:0;docker container ls -s
+: 1693847596:0;docker run -d --name mysql8-container -v /Users/petritmekuli/mysql-volumes/mysql8:/etc/mysql/conf.d mysql:8
+: 1693847656:0;docker run --name mysql8-container -d mysql:8
+: 1693847682:0;docker container ls -
+: 1693847927:0;docker run --name mysql8-container -v /Users/petritmekuli/mysql-volumes/mysql8:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:8
+: 1693847993:0;docker run --name mysql8-container -v /Users/petritmekuli/mysql-volumes/mysql8:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=password -d mysql:8
+: 1693848044:0;cd mysql-containers
+: 1693848054:0;cd mysql_containers/mysql8
+: 1693859783:0;docker start mysql8-container
+: 1693859946:0;.
+: 1693860492:0;docker run --name mysql8-container -v /Users/petritmekuli/mysql-volumes/mysql8:/var/lib/mysql -d mysql:8
+: 1693860549:0;docker run --name mysql8-container -v /Users/petritmekuli/mysql-volumes/mysql8:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -d mysql:8
+: 1693860695:0;docker run --name mysql8-container -p 3306:3306 -v /Users/petritmekuli/mysql-volumes/mysql8:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -d mysql:8
+: 1693860807:0;history | grep port
+: 1693860833:0;history | grep -p 3306
+: 1693860878:0;docker run -p 3306:3306 --name mysql8-container -v /Users/petritmekuli/mysql-volumes/mysql8:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -d mysql:8
+: 1693861160:0;docker run -p 3306:3306 --name mysql8-container -v /Users/petritmekuli/mysql-volumes/mysql8:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -d mysql:8\
+: 1693861287:0;rm -r mysql8/
+: 1693861298:0;mkdir mysql8
+: 1693861576:0;ls mysql8
+: 1693861613:0;docker run -p 3307:3306 --name mysql8-container2 -v /Users/petritmekuli/mysql-volumes/mysql8:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -d mysql:8\
+: 1693861626:0;docker exec -it mysql8-container2 bash
+: 1693861710:0;docker stop mysql8-container
+: 1693861776:0;docker container rm -f mysql8-container2
+: 1693861951:0;mkdir docker-php-fpm
+: 1693862462:0;cd ../docker-php-fpm
+: 1693862584:0;vim ~/Sites/docker-compose
+: 1693862597:0;vim ~/Sites/docker-compose/docker-compose.yml
+: 1693863305:0;cp index.php ../docker-php-fpm/index.php
+: 1693863318:0;cat ../docker-php-fpm/index.php
+: 1693863349:0;vim ../docker-php-fpm/index.php
+: 1693863701:0;less default.conf
+: 1693863858:0;docker build -t php-fpm8.2:1.0 .
+: 1693863997:0;docker run -d --name php-fpm8.2-container -v $(pwd):/usr/share/nginx/html -it php-fpm8.2:1.0
+: 1693864051:0;docker logs php-fpm8.2-container
+: 1693864085:0;less dockerfile
+: 1693864364:0;docker image rm php-fpm8.2
+: 1693864394:0;docker image rm php-fpm8.2:1.0
+: 1693864405:0;docker image rm -f php-fpm8.2:1.0
+: 1693864422:0;docker container rm php-fpm8.2-container
+: 1693864508:0;mkdir docker-nginx
+: 1693864515:0;cd docker-nginx
+: 1693864845:0;cp default.conf ../docker-nginx/configs/default.conf
+: 1693864860:0;mkdir ../docker-nginx/configs/
+: 1693864884:0;cp default.conf ~/Sites/docker-nginx/configs/default.conf
+: 1693864915:0;mkdir ~/Sites/docker-nginx/configs
+: 1693864972:0;cp nginx.repo ~/Sites/docker-nginx/configs/nginx.repo
+: 1693865300:0;cd app/
+: 1693865438:0;docker build -t nginx-phpfpm8.2:1.0 .
+: 1693865544:0;less configs/default.conf
+: 1693865614:0;docker image rm nginx-phpfpm8.2:1.0
+: 1693865717:0;docker run -d --name nginx-phpfpm8.2-container -p 8080:80 nginx-phpfpm8.2:1.0
+: 1693865916:0;docker stop php-fpm8.2:1.0
+: 1693865925:0;docker stop php-fpm8.2-container
+: 1693866032:0;docker run -p 9000:9000 -d --name php-fpm8.2-container -v $(pwd):/usr/share/nginx/html -it php-fpm8.2:1.0
+: 1693866076:0;docker container rm nginx-phpfpm8.2-container
+: 1693866081:0;docker container rm nginx-phpfpm8.2-container -f
+: 1693866702:0;rm *.log
+: 1693866783:0;docker container rm php-fpm8.2-container -f
+: 1693866819:0;docker network create mynetwork
+: 1693866938:0;docker run -p 9000:9000 -d --name php-fpm8.2-container --network mynetwork -v $(pwd):/usr/share/nginx/html -it php-fpm8.2:1.0
+: 1693866978:0;docker run -d --name nginx-phpfpm8.2-container --network mynetwork -p 8080:80 nginx-phpfpm8.2:1.0
+: 1693867024:0;docker exec nginx-phpfpm8.2 bash
+: 1693867035:0;docker exec nginx-phpfpm8.2-container bash
+: 1693867041:0;docker exec nginx-phpfpm8.2-container sh
+: 1693867072:0;docker exec -it nginx-phpfpm8.2-container sh
+: 1693867182:0;cat error.log
+: 1693867187:0;cat access.log
+: 1693915013:0;docker start php-fpm8.2-container
+: 1693915041:0;docker exec -it php-fpm8.2-container sh
+: 1693915129:0;less docker-compose.yml
+: 1693915191:0;cd docker-php-fpm
+: 1693915583:0;rm -r *.log
+: 1693915819:0;cd ../docker-nginx-phpfpm
+: 1693915851:0;cd ../docker-nginx
+: 1693916393:0;	cd ../docker-nginx
+: 1693916833:0;cat configs/defautl.conf
+: 1693916847:0;cat configs/default.conf
+: 1693917069:0;docker inspect nginx-phpfpm8.2-container
+: 1693917100:0;docker inspect mynetwork
+: 1693917208:0;docker logs php-fpm8.2-container\
+: 1693917240:0;http://php-fpm8.2-container:9000/index.php\
+: 1693917362:0;http://localhost:9000/index.php\
+: 1693917395:0;http://0.0.0.0:9000/index.php
+: 1693917694:0;docker container rm -f nginx-phpfpm8.2-container
+: 1693917834:0;cd ~/Sites/docker-php-fpm
+: 1693917839:0;~/Sites/docker-php-fpm
+: 1693917865:0;docker run -d --name nginx-phpfpm8.2-container --network mynetwork -v ~/Sites/docker-php-fpm:usr/share/nginx/html -p 8080:80 nginx-phpfpm8.2:1.0
+: 1693917898:0;docker run -d --name nginx-phpfpm8.2-container --network mynetwork -v ~/Sites/docker-php-fpm:/usr/share/nginx/html -p 8080:80 nginx-phpfpm8.2:1.0
+: 1693918235:0;docker run -p 9000:9000 -d --name php-fpm8.2-container --network mynetwork -v $(pwd)/src:/usr/share/nginx/html -it php-fpm8.2:1.0
+: 1693918322:0;mv docker-nginx docker-php-fpm/nginx
+: 1693918384:0;ls docker-nginx-fpm
+: 1693918435:0;docker build -t nginx-phpfpm8.2:1.0 nginx
+: 1693918477:0;docker run -d --name nginx-phpfpm8.2-container --network mynetwork -v ~/Sites/docker-php-fpm/src:/usr/share/nginx/html -p 8080:80 nginx-phpfpm8.2:1.0
+: 1693918720:0;ls /docker-nginx-fpm
+: 1693918727:0;ls ../docker-nginx-fpm
+: 1693918748:0;cd ../docker-nginx-fpm
+: 1693918764:0;ls server/etc
+: 1693918777:0;ls server/etc/nginx
+: 1693919032:0;ls docker-php-fpm
+: 1693919459:0;less nginx/Dockerfile
+: 1693919680:0;history | grep composer
+: 1693919838:0;docker run --rm --interactive --tty composer -v
+: 1693920006:0;docker image rm docker:latest
+: 1693920022:0;docker image rm composer:latest
+: 1693934643:0;docker run --rm --interactive --tty composer create-project --prefer-dist laravel/laravel test
+: 1693934835:0;docker run -v ~/Sites/docker-php-fpm/src:/app --rm --interactive --tty composer create-project --prefer-dist laravel/laravel test
+: 1693935101:0;rm *.*
+: 1693935111:0;mv test .
+: 1693935150:0;mv test ../src
+: 1693935194:0;mv ~/Sites/docker-php-fpm/src/test ~/Sites/docker-php-fpm/src
+: 1693935223:0;mv . ../src
+: 1693935397:0;mv test/* .
+: 1693935443:0;cd bootstrap
+: 1693935537:0;docker container rm docker-nginx-phpfpm8.2-container
+: 1693935581:0;docker image rm -f nginx-alpine:1.0
+: 1693935836:0;docker logs nginx-phpfpm8.1:1.0
+: 1693935857:0;docker logs nginx-phpfpm8.2-container
+: 1693935938:0;less nginx/default.conf
+: 1693936429:0;	cd ~/Sites
+: 1693936964:0;docker image rm nginx-alpine
+: 1693936971:0;docker image rm nginx-alpine:1.0
+: 1693937124:0;docker contaier stop $(docker container ls -qa)
+: 1693937138:0;docker stop $(docker container ls -qa)
+: 1693947680:0;docker run -it php-fpm8.2-container sh
+: 1693947717:0;docker run -it php-fpm8.2:1.0 sh
+: 1693947835:0;docker run -p 9000:9000 -d --name php-fpm8.2-container --network mynetwork -v $(pwd)/src:/usr/share/nginx/html -it php-fpm8.2:1.0 sh
+: 1693948244:0;docker container rm 067
+: 1693948684:0;touch .env
+: 1693949883:0;docker start $(docker container ls -qa)
+: 1693949942:0;docker start nginx-phpfpm8.2-container
+: 1693950285:0;docker stop nginx-phpfpm8.2-container
+: 1693950413:0;ls routes -l
+: 1693950424:0;ll routes
+: 1693950495:0;o+x routes/web.php
+: 1693950523:0;chmod o+wx routes/web.php
+: 1693951104:0;rm -r *
+: 1693951225:0;echo "<?php phpinfo(); ?>" > public/index.php
+: 1693951655:0;rm *
+: 1693951804:0;docker run -v ~/Sites/docker-php-fpm/src:/app --rm --interactive --tty composer create-project --prefer-dist laravel/laravel 
+: 1693952092:0;ls laravel -a
+: 1693952104:0;code laravel
+: 1693952167:0;open .
+: 1693952321:0;mv ~/Sites/docker-php-fpm/src/laravel/* ~/Sites/docker-php-fpm/src/
+: 1693952332:0;ls laravel
+: 1693952338:0;rm -r laravel
+: 1693952348:0;ll 
+: 1693952357:0;la
+: 1693952369:0;cat .env
+: 1693952715:0;cat default.conf
+: 1693952892:0;history | grep build
+: 1693953041:0;docker image rm nginx-phpfpm8.2:1.0 -f
+: 1693953305:0;vim nginx/configs/default.conf
+: 1693953604:0;cd ../nginx
+: 1693953659:0;cd doker-nginx-fpm
+: 1693953671:0;cd srver/nginx
+: 1693953687:0;cd server/etc/nginx/conf.d
+: 1693953907:0;cat app/configs/default.conf
+: 1693954374:0;docker run -d --name nginx-phpfpm8.2-container --network mynetwork -v ~/Sites/docker-php-fpm/src:/usr/share/nginx/html -p 8080:80 nginx-alpine:1.0
+: 1693954415:0;docker image rm nginx-alpine:1.0 -f
+: 1693954514:0;sh ../setup.sh
+: 1693954615:0;docker rm 73
+: 1693954620:0;docker image rm 73
+: 1693954643:0;docker image rm nginx-phpfpm8.2
+: 1693954895:0;cd docker-php-fpm/nginx/configs
+: 1694009029:0;docker rm nginx-phpfpm8.2:1.0
+: 1694009246:0;docker network rm php-network
+: 1694009292:0;docker network create php-network
+: 1694009372:0;ls ~/Sites/docker-php-fpm/src
+: 1694009417:0;docker run -p 9000:9000 -d --name php-fpm8.2-container --network php-network -v ~/Sites/docker-php-fpm/src:/usr/share/nginx/html -it php-fpm8.2:1.0
+: 1694009943:0;docker run -d --name nginx-phpfpm8.2-container --network php-network -v ~/Sites/docker-php-fpm/src:/usr/share/nginx/html -p 8080:80 nginx-phpfpm8.2:1.0
+: 1694010024:0;cd ../../docker-compose
+: 1694010659:0;echo "server {\
+: 1694011204:0;docker image rm -f nginx-phpfpm8.2:1.0
+: 1694011531:0;cat nginx/configs/default.conf
+: 1694014729:0;history | grep artisan
+: 1694014772:0;docker exec -it php-fpm8.2-container php artisan migrate
+: 1694014947:0;mysql -u root -p -h 0.0.0.0:3306
+: 1694081490:0;sh zsh_history_duplication_cleanup.sh
+: 1694081554:0;cd Sites/docker-php-fpm
+: 1694085395:0;cp docker-php-fpm docker-test
+: 1694085417:0;cp -r docker-php-fpm docker-test
+: 1694085431:0;cd docker-test
+: 1694085457:0;touch docker-test/test.txt 
+: 1694085475:0;ls docker-test && ls docker-php-fpm
+: 1694085490:0;ls docker-test
+: 1694085537:0;rm docker-test/test.txt
+: 1694085973:0;cd ../../docker-php-fpm
+: 1694086282:0;rm -r docker-test
+: 1694086311:0;ls build.sh
+: 1694086387:0;ls | grep docker-test
+: 1694086394:0;cd docker-php-fpm/
+: 1694102791:0;ps aux
+: 1694102794:0;ps 
+: 1694102872:0;mv src/.env .
+: 1694102995:0;docker run --rm --interactive --tty composer create-project --prefer-dist laravel/laravel src
+: 1694103199:0;docker run -v ~/Sites/docker-php-fpm/src:/app --rm --interactive --tty composer create-project --prefer-dist laravel/laravel src
+: 1694103573:0;mv * ../
+: 1694103686:0;mv .env src
+: 1694103793:0;docker build network php-network
+: 1694103868:0;docker exec -it php-fpm8.2-container php artisan key:generate
+: 1694103941:0;vim scr/routes/web.php
+: 1694103957:0;vim src/routes/web.php
+: 1694104137:0;docker container rm mysql8-container
+: 1694104141:0;docker container rm mysql8-container -f
+: 1694104171:0;vim src/.env
+: 1694104416:0;docker container stop $(docker container ls -qa)
+: 1694104431:0;docker container start $(docker container ls -qa)
+: 1694104477:0;docker container start nginx-phpfpm8.2-container
+: 1694104875:0;history | grep -E 'network * mysql'
+: 1694104887:0;history | grep -E 'network*mysql'
+: 1694104982:0;history | grep 3306
+: 1694105068:0;cat ../setup.sh
+: 1694105086:0;docker run --network php-network -p 3306:3306 --name mysql8-container -v /Users/petritmekuli/mysql-volumes/mysql8:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -d mysql:8
+: 1694105173:0;mv .env ..
+: 1694105186:0;mv .env example.env
+: 1694105209:0;mv ../.env ../example.env
+: 1694105245:0;mv example.env src
+: 1694105359:0;mv docker-php-fpm docker-nginx-phpfpm-mysql
+: 1694105367:0;ls | grep docker
+: 1694105387:0;cd docker-nginx-phpfpm-mysql
+: 1694105396:0;cat README.md
+: 1694106273:0;git commit -m "first commit"
+: 1694106319:0;vim .zsh_history
+: 1694106372:0;git commit --amend
+: 1694106447:0;git reset --hard HEAD~1
+: 1694106468:0;git reset --hard HEAD~1\
+: 1694106536:0;rm -rt .git
+: 1694106580:0;vim .setup.sh.swp
+: 1694106642:0;rm .setup.sh.swp
+: 1694106648:0;rm .zsh_history
+: 1694106722:0;git remote add origin https://github.com/petritmekuli/docker-nginx-phpfpm-mysql.git
+: 1694106766:0;rm -r docker-nginx-phpfpm-mysql
+: 1694106773:0;sudo rm -r docker-nginx-phpfpm-mysql
+: 1694106817:0;mkdir docker-nginx-phpfpm-mysql
+: 1694106910:0;git pull origin
+: 1694106958:0;git pull origin main
+: 1694107117:0;cd ../README.md
+: 1694107127:0;cat ../README.md
+: 1694107573:0;mv * ~/Sites/docker-nginx-phpfpm-mysql
+: 1694107587:0;cd ~/Sites/docker-nginx-phpfpm-mysql
+: 1694107601:0;open
+: 1694107634:0;/Users/petritmekuli/Sites/docker-nginx-phpfpm-mysql/artisan ; exit;
+: 1694107757:0;cp example.env .env
+: 1694107823:0;sudo rm -r .
+: 1694108042:0;docker run -v ~/Sites/docker-php-fpm/src:/app --rm --interactive --tty composer create-project --prefer-dist laravel/laravel .
+: 1694108084:0;mv example.env ../
+: 1694108116:0;docker run -v ~/Sites/docker-php-fpm/src:/app --rm --interactive --tty composer create-project --prefer-dist laravel/laravel .\
+: 1694108407:0;docker run -v ~/Sites/docker-php-fpm/src:/app --rm --interactive --tty bash -c "rm -rf /app/*"
+: 1694108464:0;mv example.env
+: 1694108771:0;sudo rm -r ../../docker-php-fpm
+: 1694108878:0;docker run -v ~/Sites/docker-nginx-phpfpm-mysql/src:/app --rm --interactive --tty composer create-project --prefer-dist laravel/laravel .
+: 1694108897:0;ocker run -v ~/Sites/docker-php-fpm/src:/app --rm --interactive --tty bash -c "rm -rf /app/src/*
+: 1694108905:0;ocker run -v ~/Sites/docker-php-fpm/src:/app --rm --interactive --tty bash -c "rm -rf /app/*"
+: 1694108940:0;docker run -v ~/Sites/docker-php-fpm/src:/app --rm --interactive --tty bash -c "rm -rf /app/src"
+: 1694108956:0;ls ../../
+: 1694108976:0;ls ~/Sites/docker-php-fpm
+: 1694108987:0;rm ~/Sites/docker-php-fpm
+: 1694109010:0;sudo rm -r ~/Sites/docker-php-fpm
+: 1694109040:0;ls ~/Sites/
+: 1694109172:0;docker run -v ~/Sites/docker-php-fpm/src:/app --rm --interactive --tty bash -c "ls /app/*"
+: 1694109389:0;mv src/example.env .
+: 1694109411:0;docker run -v ~/Sites/docker-nginx-phpfpm-mysql/src:/app --rm --interactive --tty composer create-project --prefer-dist laravel/laravel src
+: 1694110221:0;cd srcl
+: 1694110270:0;cp ~/Sites/docker-nginx-phpfpm-mysql/src/src ~/Sites/docker-nginx-phpfpm-mysql/src && rm -r ~/Sites/docker-nginx-phpfpm-mysql/src/src
+: 1694110328:0;cp ~/Sites/docker-nginx-phpfpm-mysql/src/src/* ~/Sites/docker-nginx-phpfpm-mysql/src && rm -r ~/Sites/docker-nginx-phpfpm-mysql/src/src
+: 1694110446:0;rm artisan
+: 1694110467:0;cp ~/Sites/docker-nginx-phpfpm-mysql/src/src/* ~/Sites/docker-nginx-phpfpm-mysql/src
+: 1694110651:0;cp -ra ~/Sites/docker-nginx-phpfpm-mysql/src/src/* ~/Sites/docker-nginx-phpfpm-mysql/src
+: 1694110664:0;cp -r -a ~/Sites/docker-nginx-phpfpm-mysql/src/src/* ~/Sites/docker-nginx-phpfpm-mysql/src
+: 1694110674:0;cp -a ~/Sites/docker-nginx-phpfpm-mysql/src/src/* ~/Sites/docker-nginx-phpfpm-mysql/src
+: 1694110711:0;ls -a | grep env
+: 1694114309:0;rm app bootstrap database resources tests artisan config public routes storage vendor
+: 1694114318:0;rm -r app bootstrap database resources tests artisan config public routes storage vendor
+: 1694114352:0;mv -a . ../
+: 1694114526:0;mv -a ~/Sites/docker-nginx-phpfpm-mysql/src/src/* ~/Sites/docker-nginx-phpfpm-mysql/src
+: 1694114568:0;mv ~/Sites/docker-nginx-phpfpm-mysql/src/src/* ~/Sites/docker-nginx-phpfpm-mysql/src
+: 1694114831:0;shopt -s dotglob
+: 1694115274:0;setup.sh
+: 1694115557:0;git add -p
+: 1694116157:0;git restore src/example.env
+: 1694116324:0;git diff example.env
+: 1694117150:0;git clean -n
+: 1694117167:0;git clean -f
+: 1694117182:0;git clean -fd
+: 1694117216:0;cat example.env
+: 1694117225:0;cat src/example.env
+: 1694117279:0;git reset HEAD~1\
+: 1694117337:0;git 
+: 1694117363:0;sudo -r .git
+: 1694208811:0;git restore --staged
+: 1694208922:0;git diff --staged .
+: 1694208948:0;git commit -m "test"
+: 1694209147:0;git diff 6dd b7d
+: 1694209190:0;git blame setup.sh
+: 1694209234:0;git blame cleanup.sh
+: 1694209322:0;git diff cleanup.sh
+: 1694209365:0;rm .cleanup.sh.swp
+: 1694209564:0;git diff b7d 6dd .
+: 1694209572:0;git diff b7d 6dd cleanup.sh
+: 1694209597:0;git diff b7d HEAD cleanup.sh
+: 1694209662:0;git diff b7d4 6ddc cleanup.sh
+: 1694209880:0;git stash save
+: 1694209905:0;git stash list
+: 1694209913:0;git stash pop
+: 1694210221:0;gire restore .
+: 1694635412:0;sudo rm -r docker-nginx-fpm
+: 1694635449:0;c
+: 1694635479:0;rm -r docker-php-fpm
+: 1694635616:0;ls | grep start
+: 1694635661:0;cat test/docker-compose.yml
+: 1694635716:0;ls try-it-here
+: 1694635726:0;rm -r try-it-here
+: 1694635733:0;sudo rm -r try-it-here
+: 1694635774:0;cp docker-nginx-phpfpm-mysql try-laravel
+: 1694635785:0;cp -r docker-nginx-phpfpm-mysql try-laravel
+: 1694635794:0;cd try-laravel
+: 1694635867:0;mv src/example.env example.env
+: 1694636137:0;docker run -v ~/Sites/try-laravel/src:/app --rm --interactive --tty composer create-project --prefer-dist laravel/laravel ./src
+: 1694636616:0;$pws
+: 1694636618:0;$pwd
+: 1694636680:0;mv $(pwd)/src/* $(pwd)
+: 1694636697:0;mv $(pwd)/src/.* $(pwd)
+: 1697994371:0;doce explaining-laravel
+: 1704901880:0;mkdir docker-react
+: 1704903338:0;mv docker-react docker-node-react
+: 1704903346:0;cd docker-node-react
+: 1704903358:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 node /bin/bash
+: 1704904235:0;cd react-app
+: 1704905021:0;docker conteinar ls
+: 1704905207:0;docker logs b9c386f844ac\
+: 1704905230:0;docker logs b9c386f844ac
+: 1704905522:0;docker start docker-node-react\
+: 1704905621:0;docker exec -it docker-node-react /bin/bash\
+: 1704905655:0;node -v
+: 1704975984:0;mv react-app .
+: 1704976020:0;mv ./ ../
+: 1704976069:0;mv react-app ~/Sites/docker-node-react
+: 1704976169:0;rm -r react-app
+: 1704976213:0;cat App.js
+: 1704976490:0;npm start
+: 1704977135:0;docker container start b9c386f844ac
+: 1704977144:0;docker container stop b9c386f844ac
+: 1704977233:0;docker container rm -f b9c386f844ac
+: 1704977441:0;nginx -v
+: 1704977449:0;nginx stop
+: 1704977452:0;nginx -h
+: 1704977501:0;ps aux | grep nginx\
+: 1704977548:0;sudo service nginx stop\
+: 1704977593:0;sudo nginx -s stop\
+: 1704977638:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3001:3000 node /bin/bash
+: 1704977780:0;cd src/
+: 1704977787:0;vim App.js
+: 1704977887:0;sudo nginx\
+: 1704996507:0;cd Sites/docker-node-react
+: 1704997176:0;mkdir src/Components
+: 1704997209:0;cp App.js src/Components/FirstComponent.js
+: 1704997226:0;cp src/App.js src/Components/FirstComponent.js
+: 1705001118:0;cd src/Components
+: 1705001138:0;cp State.js ObjectState.js
+: 1705058786:0;brew uninstall node
+: 1705058812:0;brew uninstall npm
+: 1705059005:0;echo "The CLI commands to dockerize the React app" > Dockerfile.txt
+: 1705059012:0;vim Dockerfile.txt
+: 1705059068:0;docker rm 908a
+: 1705059077:0;docker rm -f 908a
+: 1705059335:0;cat Dockerfile.txt
+: 1705075544:0;touch Game.js
+: 1705147611:0;docker start docker-node-reacr
+: 1705147616:0;docker start docker-node-react
+: 1705152305:0;docker stop docker-node-react
+: 1705152321:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 -p 9229:9229 node --inspect=0.0.0.0:9229 /bin/bash
+: 1705152354:0;docker container rm docker-node-react -f
+: 1705321321:0;touch Test.js
+: 1705411272:0;touch React.js
+: 1705421168:0;docker exec -it docker-node-react bin/bash
+: 1705421175:0;docker exec -it docker-node-react /bin/bash
+: 1705596659:0;cp State.js ArticlesBoard.js
+: 1705601357:0;touch Products.js
+: 1705671019:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 -p 9229:9229 node /bin/bash
+: 1705671185:0;mkdir ../../.vscode
+: 1705671215:0;ls ~
+: 1705671249:0;touch ../../.vscode/launch.js
+: 1705671525:0;mv ../../.vscode/launch.js ../../.vscode/launch.json
+: 1705671664:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 -p 9229:9229 node /bin/bash\
+: 1705931233:0;touch .vscode/launch.json
+: 1705931248:0;vim .vscode/launch.json
+: 1705931973:0;npm run start
+: 1705932847:0;docker build -t docker-node-react:1.0 .
+: 1705933160:0;docker run -it docker-node-react:1.0 /bin/bash
+: 1705933181:0;docker run -it docker-node-react:1.0 \bin\bash
+: 1705933227:0;vim ~/.zsh_history | grep "docker run"
+: 1705933286:0;cat ~/.zsh_history | grep "docker run"
+: 1705933576:0;docker run -it --name docker-node-react -v "$(pwd):/usr/src/app" -w /usr/src/app docker-node-react:1.0 /bin/bash\
+: 1705933701:0;cat ~/.zsh_history | grep "-it"
+: 1705933709:0;cat ~/.zsh_history | grep "it"
+: 1705933742:0;cat ~/.zsh_history | grep "docker run "
+: 1705933781:0;docker run -it --name docker-node-react -v "$(pwd):/usr/src/app" -w /usr/src/app docker-node-react:1.0 /sh\
+: 1705933788:0;docker run -it --name docker-node-react -v "$(pwd):/usr/src/app" -w /usr/src/app docker-node-react:1.0 sh\
+: 1705934256:0;docker run -it --name docker-node-react -v "$(pwd):/usr/src/app" -w /usr/src/app -p 3000:3000 docker-node-react:1.0 /bin/bash\
+: 1705934269:0;docker run -it --name docker-node-react -v "$(pwd):/usr/src/app" -w /usr/src/app -p 3000:3000 docker-node-react:1.0 sh\
+: 1706016524:0;docker containers
+: 1706016544:0;docker exec -it docker-node-react sh
+: 1706201699:0;docker exec -it --user=root docker-node-react /bin/sh
+: 1706205044:0;cp src ../src
+: 1706205069:0;cp src/* ../src
+: 1706270846:0;cp -r src ../src
+: 1706270871:0;ls src/Components
+: 1706270936:0;rm -r docker-node-react
+: 1706271074:0;docker image prune
+: 1706271116:0;docker image rm docker-node-react:1.0
+: 1706271300:0;docker containers -a --filter "ancestor=image_name"
+: 1706271382:0;docker containers -a --filter "ancestor=docker-node-react:1.0"
+: 1706271419:0;docker containers ls -a --filter "ancestor=docker-node-react:1.0"
+: 1706271454:0;docker ps -a -q --filter "ancestor=docker-node-react:1.0"
+: 1706271484:0;docker ps -a --filter "ancestor=docker-node-react:1.0"
+: 1706271561:0;docker container ls -a --filter "ancestor=docker-node-react:1.0" -q\
+: 1706271648:0;docker container rm -f $(docker container ls -a --filter "ancestor=docker-node-react:1.0" -q)
+: 1706271684:0;docker image rm -f docker-node-react:1.0
+: 1706272220:0;mkdir docker-node-react
+: 1706272902:0;vim zsh_history_duplication_cleanup.sh
+: 1706272935:0;ls
+: 1706272940:0;cd Sites
+: 1706272941:0;ls
+: 1706272949:0;cd docker-node-react
+: 1706272950:0;ls
+: 1706272978:0;cd docker-node-react
+: 1706272989:0;mv * ../
+: 1706272991:0;ls
+: 1706272992:0;ls -a
+: 1706272998:0;cd ..
+: 1706272999:0;ls
+: 1706273009:0;cd docker-node-react
+: 1706273009:0;ls
+: 1706273014:0;ls -a
+: 1706273088:0;shopt -s dotglob\
+
+: 1706273128:0;setopt dot_glob\
+
+: 1706273134:0;mv * ../
+: 1706273138:0;ls -a
+: 1706273149:0;ls
+: 1706273151:0;cd ..
+: 1706273152:0;ls
+: 1706273175:0;cd ..
+: 1706273176:0;ls
+: 1706273187:0;mv * docker-node-react
+: 1706273196:0;ls
+: 1706273208:0;ls -a
+: 1706273214:0;cd node_modules
+: 1706273217:0;ls
+: 1706273220:0;cd ..
+: 1706273225:0;cd docker-node-react
+: 1706273226:0;ls
+: 1706273233:0;ls node_modules
+: 1706273246:0;rm -r node_modules
+: 1706273248:0;ls
+: 1706273255:0;.
+: 1706273257:0;open .
+: 1706273280:0;mv * ../
+: 1706273283:0;cd ..
+: 1706273284:0;ls
+: 1706273288:0;rm -r docker-node-react
+: 1706273290:0;ls
+: 1706273334:0;cd ..
+: 1706273338:0;rm -r docker-node-react
+: 1706273432:0;ls
+: 1706273446:0;docker exec -it --user=root docker-node-react /bin/sh
+: 1706273451:0;docker container ls
+: 1706273457:0;docker container ls -a
+: 1706273473:0;docker start docker-node-react
+: 1706273478:0;docker exec -it --user=root docker-node-react /bin/sh
+: 1706273506:0;docker container rm docker-node-react -f
+: 1706273511:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 node /bin/bash
+: 1706273874:0;ls
+: 1706273886:0;cd docker-node-react
+: 1706273887:0;ls
+: 1706273891:0;cd docker-node-react
+: 1706273892:0;ls
+: 1706273896:0;rm -r src
+: 1706273939:0;cp ../../src ./src
+: 1706273940:0;ls
+: 1706273954:0;cp -r ../../src ./src
+: 1706273955:0;ls
+: 1706273958:0;cd src
+: 1706273959:0;ls
+: 1706273977:0;cd Components
+: 1706273978:0;LS
+: 1706273985:0;cd ..
+: 1706273986:0;ls
+: 1706273995:0;vim App.js
+: 1706274046:0;docker exec -it docker-node-react /bin/bash
+: 1706274508:0;ls
+: 1706274510:0;cd ..
+: 1706274511:0;ls
+: 1706274531:0;code .
+: 1706274563:0;touch Dockerfile
+: 1706274569:0;vim Dockerfile
+: 1706277335:0;ls
+: 1706277368:0;ls -a
+: 1706277384:0;mv *(D) ../
+: 1706277385:0;ls
+: 1706277387:0;ls -a
+: 1706277392:0;cd ..
+: 1706277394:0;ls -a
+: 1706277996:0;ls
+: 1706278005:0;rm -r docker-node-react
+: 1706278006:0;ls
+: 1706278008:0;ls -a
+: 1706278102:0;ls
+: 1706278105:0;ls -a
+: 1706278117:0;ls
+: 1706278118:0;ls -a
+: 1706278121:0;cd ..
+: 1706278121:0;ls
+: 1706278128:0;cd docker-node-react
+: 1706278130:0;ls
+: 1706278151:0;docker container rm docker-node-react -f
+: 1706278168:0;docker build -t docker-node-react:1.0 .
+: 1706278292:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 node /bin/bash
+: 1706278309:0;docker container rm docker-node-react -f
+: 1706278434:0;vim Dockerfile
+: 1706278462:0;\
+docker run -it --name docker-node-react -v "$(pwd):/usr/src/app" docker-node-react:1.0 /sh
+: 1706278476:0;\
+docker run -it --name docker-node-react -v "$(pwd):/usr/src/app" docker-node-react:1.0 /bin/sh
+: 1706278487:0;docker container rm docker-node-react -f
+: 1706278489:0;\
+docker run -it --name docker-node-react -v "$(pwd):/usr/src/app" docker-node-react:1.0 /bin/sh
+: 1706278545:0;ls
+: 1706278553:0;vim Dockerfile
+: 1706278737:0;docker container rm docker-node-react -f
+: 1706278782:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 -p 3000:3000 sh
+: 1706278803:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 -p 3000:3000 docker-node-react:10 sh
+: 1706278816:0;docker image ls -a
+: 1706278832:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 -p 3000:3000 docker-node-react:1.0 sh
+: 1706278839:0;docker container ls
+: 1706278865:0;docker contaienr ls -a
+: 1706278873:0;docker container ls -a
+: 1706278887:0;docker container rm docker-node-react -f
+: 1706278894:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 -p 3000:3000 docker-node-react:1.0 sh
+: 1706278928:0;ps aux
+: 1706278956:0;sudo lsof -i :3000\
+
+: 1706278969:0;docker container rm docker-node-react -f
+: 1706278996:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 -p docker-node-react:1.0 sh
+: 1706279010:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 docker-node-react:1.0 sh
+: 1706279110:0;ls
+: 1706279115:0;code .
+: 1706279211:0;vim src/Components/ArticlesBoard.js
+: 1706279746:0;vim src/App.js
+: 1706279899:0;vim src/Components/ArticlesBoard.js
+: 1706281142:0;ls
+: 1706281708:0;vim src/Components/ArticlesBoard.js
+: 1706283376:0;ls
+: 1706283388:0;git init
+: 1706283422:0;git add -p
+: 1706283476:0;git log 
+: 1706283552:0;git status
+: 1706283566:0;git add README.md
+: 1706283571:0;git status
+: 1706283582:0;cat README.md
+: 1706283645:0;git commit -m "initial commit"
+: 1706283674:0;git branch create-react-app
+: 1706283691:0;git switch create-react-app
+: 1706283698:0;git add -p
+: 1706283753:0;git status
+: 1706283761:0;git add -p
+: 1706283859:0;git add .
+: 1706283862:0;git status
+: 1706283870:0;git add -p
+: 1706283874:0;git status
+: 1706283953:0;git commit -m "some basic react component examples"
+: 1706283960:0;git log --oneline --decorate
+: 1706283976:0;git log --oneline --graph --decorate
+: 1706284032:0;git status
+: 1706284510:0;ls
+: 1706284515:0;git status
+: 1706284524:0;vim package.json
+: 1706284635:0;cd ..
+: 1706284636:0;ls
+: 1706284685:0;mv docker-node-react docker-node-react-old
+: 1706284686:0;ls
+: 1706284700:0;docker container ls
+: 1706284756:0;docker container ls -a
+: 1706284782:0;docker container rm docker-node-react -f
+: 1706284801:0;docker volume ls
+: 1706284918:0;mkdir docker-node-react
+: 1706284923:0;cd docker-node-react
+: 1706284940:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 node /bin/bash
+: 1706285284:0;ls
+: 1706285295:0;cd docker-node-react
+: 1706285300:0;mv *(D) ../
+: 1706285304:0;rm -r docker-node-react
+: 1706285308:0;cd ..
+: 1706285310:0;rm -r docker-node-react
+: 1706285312:0;ls -a
+: 1706285322:0;ls
+: 1706285376:0;cp ../docker-node-react-old/Dockerfile Dockerfile
+: 1706285385:0;cat Dockerfile
+: 1706285410:0;docker image ls 
+: 1706285424:0;docker image rm -f docker-node-react:1.0
+: 1706285429:0;docker build .
+: 1706285494:0;ls
+: 1706285516:0;docker container ls -a
+: 1706285536:0;docker container rm docker-node-react -f
+: 1706285559:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 docker-node-react:1.0 sh
+: 1706285580:0;docker build -t docker-node-react:1.0 .
+: 1706285594:0;docker image ls 
+: 1706285609:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 docker-node-react:1.0 sh
+: 1706285707:0;code .
+: 1706287594:0;ls
+: 1706287607:0;mv src src-old
+: 1706287643:0;cp ../docker-node-react-old/src ./src
+: 1706287655:0;cp -r ../docker-node-react-old/src ./src
+: 1706287746:0;ls
+: 1706287750:0;git init
+: 1706287765:0;git add README.md
+: 1706287772:0;git commit -m "initial commit"
+: 1706287779:0;git branch create-react-app
+: 1706287786:0;git switch create-react-app
+: 1706287791:0;git add .
+: 1706287801:0;git commit -m "some basic react component examples"
+: 1706287806:0;git status
+: 1706288270:0;ls
+: 1706288276:0;vim tailwind.config.js
+: 1706288303:0;ls
+: 1706288308:0;cd src
+: 1706288309:0;ls
+: 1706288316:0;vim index.css
+: 1706358595:0;docker container ls
+: 1706358607:0;docker start docker-node-react
+: 1706358619:0;docker exec -it docker-node-react /bin/bash
+: 1706358631:0;docker exec -it --user=root docker-node-react /bin/sh
+: 1706358701:0;cd Sites/docker-node-react
+: 1706358706:0;git status
+: 1706358733:0;git restore .
+: 1706358738:0;git status
+: 1706358851:0;git clean -fd
+: 1706358858:0;git status
+: 1706358946:0;docker start docker-node-react
+: 1706358951:0;docker exec -it --user=root docker-node-react /bin/sh
+: 1706359132:0;git status
+: 1706360002:0;ls
+: 1706360011:0;vim tailwind.config.js
+: 1706360059:0;touch postcss.config.js
+: 1706360061:0;vim postcss.config.js
+: 1706360082:0;ls
+: 1706360085:0;cd src
+: 1706360089:0;vim ls
+: 1706360134:0;ls
+: 1706360149:0;touch styles.css
+: 1706360153:0;vim styles.css
+: 1706360186:0;vim index.js
+: 1706360208:0;npm start
+: 1706360224:0;npm -v
+: 1706360228:0;node -v
+: 1706360230:0;php -v
+: 1706360354:0;cd ..
+: 1706360357:0;code .
+: 1706362314:0;vim package.json
+: 1706362424:0;docker exec -it --user=root docker-node-react /bin/sh
+: 1706362553:0;git status
+: 1706362558:0;git restore .
+: 1706362563:0;git clean -fd
+: 1706362569:0;git status
+: 1706363269:0;docker container ls -s
+: 1706363272:0;docker container ls -a
+: 1706363282:0;docker container rm docker-node-react -f
+: 1706363304:0;docker run -u=1000:1000 -v $(pwd):/app -w=/app -d -p 3000:3000 --rm --name=docker-node-react node bash -c "npm install && npm run dev"
+: 1706363311:0;docker container ls
+: 1706363335:0;cd Sites
+: 1706363336:0;ls
+: 1706363341:0;cd docker-node-react
+: 1706363349:0;docker container ls
+: 1706363365:0;docker start docker-node-react
+: 1706363374:0;docker container ls -a
+: 1706363401:0;docker run -u=1000:1000 -v $(pwd):/app -w=/app -d -p 3000:3000 --rm --name=docker-node-react node bash -c "npm install && npm run dev"
+: 1706363406:0;docker container ls
+: 1706363435:0;docker exec -it docker-node-react /bin/bash
+: 1706363446:0;docker container ls
+: 1706363450:0;docker container ls -a
+: 1706363511:0;docker run -u=1000:1000 -v $(pwd):/app -w=/app -d -p 3000:3000 --rm --name=nodedev node bash -c "npm install && npm run dev"\
+
+: 1706363515:0;docker container ls
+: 1706363784:0;docker container ls -a
+: 1706363928:0;docker run -it --name docker-node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 node /bin/bash
+: 1706364078:0;git status
+: 1706364197:0;touch tailwind.config.js
+: 1706364205:0;vim tailwind.config.js
+: 1706364237:0;touch postcss.config.js
+: 1706364241:0;vim postcss.config.js
+: 1706364266:0;touch src/styles.css
+: 1706364271:0;vim src/styles.css
+: 1706364290:0;vim src/index.js
+: 1706364311:0;docker container ls -a
+: 1706364329:0;docker exec -it docker-node-react /bin/bash
+: 1706364345:0;docker start docker-node-react
+: 1706364350:0;docker conatainer ls
+: 1706364355:0;docker container ls
+: 1706364361:0;docker exec -it docker-node-react /bin/bash
+: 1706368379:0;git status
+: 1706368386:0;git add -p
+: 1706368448:0;git status
+: 1706368469:0;git add tailwind.config.js
+: 1706368475:0;git add postcss.config.js
+: 1706368483:0;git status
+: 1706368509:0;git add src/styles.css
+: 1706368512:0;git status
+: 1706368558:0;git commit
+: 1706368772:0;cz
+: 1706368907:0;git status
+: 1706368911:0;cz
+: 1706369247:0;git status
+: 1706369454:0;git stash list
+: 1706369476:0;git status
+: 1706369520:0;git stash save --include-untracked "Stashing only unstaged changes"
+: 1706369529:0;ls
+: 1706369532:0;git status
+: 1706369536:0;git stash list
+: 1706369562:0;docker container ls
+: 1706369567:0;docker exec -it docker-node-react /bin/bash
+: 1706369646:0;git stash list
+: 1706369680:0;git stash apply stash@{0}
+: 1706369684:0;git status
+: 1706369717:0;git add .
+: 1706369722:0;cz
+: 1706369855:0;git status
+: 1706369865:0;git log --oneline --graph --decorate
+: 1706369877:0;git switch main
+: 1706369881:0;git log --oneline --graph --decorate
+: 1706369903:0;git switch -
+: 1706480228:0;cd Sites
+: 1706480228:0;ls
+: 1706480237:0;cd src
+: 1706480240:0;ls -l
+: 1706480244:0;ls -a
+: 1706480652:0;cd ../docker-node-react
+: 1706480659:0;git status
+: 1706480687:0;git checkout create-react-app
+: 1706480690:0;git status
+: 1706480699:0;code .
+: 1706480709:0;docker container ls
+: 1706480714:0;docker container ls -a
+: 1706480738:0;docker start docker-node-react
+: 1706480800:0;docker container ls -a
+: 1706480806:0;docker container ls
+: 1706480820:0;docker exec -it docker-node-react /bin/bash
+: 1706481165:0;cd Sites/docker-node-react
+: 1706481167:0;code .
+: 1706481352:0;git status
+: 1706481358:0;git add .
+: 1706481365:0;git status
+: 1706481378:0;cz
+: 1706482702:0;git status
+: 1706482707:0;cz
+: 1706482753:0;git log --oneline --graph --decorate
+: 1706482816:0;git diff 4bf1
+: 1706482847:0;git log --oneline --graph --decorate
+: 1706482860:0;git diff 4bf1 HEAD
+: 1706482868:0;git log --oneline --graph --decorate
+: 1706482889:0;git diff 1f6 HEAD
+: 1706482928:0;git diff HEAD~2
+: 1706648169:0;docker start docker-node-react
+: 1706648175:0;docker exec -it docker-node-react /bin/bash
+: 1706648231:0;cd Sites/docker-node-react
+: 1706648235:0;code .
+: 1706654562:0;docker stop $(docker container ls -qa)
+: 1706654583:0;docker container ls
+: 1706654589:0;docker container ls -a
+: 1706789498:0;docker start docker-node-react
+: 1706789511:0;docker exec -it docker-node-react /bin/bash
+: 1707261063:0;docker start docker-node-react
+: 1707261070:0;docker exec -it docker-node-react /bin/bash
+: 1707261120:0;cd Sites/docker-node-react
+: 1707261123:0;ls
+: 1707261127:0;git status
+: 1707261140:0;code .
+: 1707261171:0;git diff HEAD~1
+: 1707261213:0;git log --oneline --graph --decorate
+: 1707261236:0;git diff HEAD~
+: 1707261297:0;git status
+: 1707261319:0;git diff HEAD HEAD~1
+: 1707261365:0;git diff HEAD
+: 1707262161:0;git log --oneline --graph --decorate
+: 1707262210:0;git diff 1f6270b 4bf1ab2 
+: 1707262232:0;git log --oneline --graph --decorate
+: 1707262257:0;git diff 4bf1ab2 1f6270b 
+: 1707262285:0;git log --oneline --graph --decorate
+: 1707262301:0;git diff 8dace05 1f6270b
+: 1707263498:0;git checkout main
+: 1707263525:0;git switch main
+: 1707263529:0;git switch main -f
+: 1707263545:0;git log --oneline --graph --decorate
+: 1707263576:0;git switch create-react-app
+: 1707263583:0;git status
+: 1707263600:0;git log --oneline --graph --decorate
+: 1707263609:0;git checkout 8dace05
+: 1707263966:0;cd ..
+: 1707263970:0;cd docker-node-react
+: 1707264043:0;git log --oneline --graph --decorate
+: 1707264158:0;git log --all
+: 1707264177:0;git log --all --oneline
+: 1707264241:0;git show 98c77a9:launch.json
+: 1707264252:0;git show 98c77a9:.vscode/launch.json
+: 1707264284:0;mkdir .vscode
+: 1707264298:0;touch .vscode/launch.json
+: 1707264306:0;vim .vscode/launch.json
+: 1707264366:0;git show 98c77a9:.vscode/launch.json
+: 1707264887:0;git status
+: 1707264901:0;git restore .
+: 1707264919:0;git switch create-react-app -f
+: 1707264936:0;git status
+: 1707347992:0;cd Sites
+: 1707348006:0;cd docker-node-react
+: 1707348007:0;ls
+: 1707348016:0;code .
+: 1707393894:0;cd Sites/docker-node-react
+: 1707393903:0;code .
+: 1707609208:0;cd Sites
+: 1707609208:0;ls
+: 1707609218:0;ls src
+: 1707609228:0;cd Src
+: 1707609230:0;ls
+: 1707609249:0;touch test.txt
+: 1707609261:0;code .
+: 1707609268:0;vim test.txt
+: 1707680813:0;cd Sites/docker-node-react
+: 1707680818:0;code .
+: 1707680835:0;git status
+: 1707680951:0;docker start docker-node-react
+: 1707680958:0;docker exec -it docker-node-react /bin/bash
+: 1707681030:0;git log --all --oneline
+: 1707681087:0;git checkout main
+: 1707681101:0;git status
+: 1707681143:0;git restore .
+: 1707681172:0;git clean -fd
+: 1707681179:0;git log --all --oneline
+: 1707681217:0;git status
+: 1707681226:0;git checkout 8d4ff
+: 1707681255:0;git status
+: 1707681268:0;git checkout main
+: 1707681277:0;git status
+: 1707681302:0;git switch create-react-app
+: 1707681307:0;git status
+: 1707681354:0;code .
+: 1707681371:0;git log --oneline --graph --decorate
+: 1707681397:0;git log --oneline
+: 1707681527:0;git checkout main
+: 1707681548:0;git checkout 8dace
+: 1707681567:0;ls
+: 1707681593:0;touch src/places.js
+: 1707681634:0;touch src/TravelPlan.js
+: 1707681733:0;mv src/TravelPlan.js src/Components/TravelPlan.js
+: 1707681781:0;mv src/places.js src/Components/places.js\
+: 1707682019:0;git stash list
+: 1707682068:0;git stash save --include-untracked "Stashing only unstaged changes"
+: 1707682074:0;git stash list
+: 1707682104:0;git status
+: 1707682114:0;git log --oneline
+: 1707682203:0;git stash list
+: 1707682212:0;git stash pop
+: 1707682216:0;git stash list
+: 1707684876:0;touch src/Components/PlaceTree.js
+: 1707687894:0;git status
+: 1707687901:0;git restore .
+: 1707687915:0;git clean -fd
+: 1707691973:0;git status
+: 1707691983:0;git log --oneline
+: 1707691992:0;git switch create-react-app
+: 1707692268:0;git log --oneline
+: 1707692278:0;git status
+: 1707692294:0;git add .
+: 1707692624:0;echo "feat: cache the whole http response using Middleware " | commitlint
+: 1707692644:0;echo "feat: Cache the whole http response using Middleware " | commitlint
+: 1707692673:0;git log --oneline
+: 1707692681:0;cz
+: 1707693098:0;touch src/Components/TravelPlan.js
+: 1707693123:0;touch src/Components/places.js
+: 1707740335:0;docker start docker-node-react
+: 1707740344:0;docker exec -it docker-node-react /bin/bash
+: 1707740356:0;cd Sites/docker-node-react
+: 1707740361:0;code .
+: 1707838911:0;vim
+: 1707868416:0;ls
+: 1707868420:0;cd Desktop
+: 1707868421:0;ls
+: 1707868428:0;touch vim.txt
+: 1707868434:0;vim vim.txt
+: 1707869606:0;vim
+: 1708636354:0;cd Sites/docker-node-react
+: 1708636356:0;ls
+: 1708636360:0;cd src
+: 1708636361:0;ls
+: 1708684499:0;cd Sites/docker-node-react
+: 1708684502:0;ls
+: 1708684508:0;cd src/Components
+: 1708684509:0;ls
+: 1708684518:0;vim ..App.js
+: 1708684529:0;ls
+: 1708684540:0;ls ..
+: 1708684550:0;cd ..App.js
+: 1708684557:0;cd ../App.js
+: 1708684564:0;vim ../App.js
+: 1708684651:0;vim Test.js
+: 1708684740:0;cd ~
+: 1708684753:0;docker start docker-node-react
+: 1708684760:0;docker exec -it docker-node-react /bin/bash
+: 1708684992:0;vim ../App.js
+: 1708685099:0;vim Test.js
+: 1709768685:0;vim
+: 1710112697:0;cd Sites/docker-node-react
+: 1710112699:0;ls
+: 1710112705:0;cd ~
+: 1710112717:0;docker start docker-node-react
+: 1710112725:0;docker container ls
+: 1710112769:0;docker start docker-node-react
+: 1710112773:0;docker container ls
+: 1710112854:0;code .
+: 1710113401:0;docker start docker-node-react
+: 1710113411:0;docker container ls
+: 1710113498:0;docker container ls -a
+: 1710113567:0;docker logs docker-node-react
+: 1710113588:0;docker exec -it docker-node-react /bin/bash
+: 1710114593:0;git log --oneline --graph --decorate
+: 1710114612:0;git branch 
+: 1710114641:0;git checkout main
+: 1710114649:0;git checkout main -f
+: 1710114733:0;code .
+: 1710114797:0;git checkout create-react-app
+: 1710114808:0;git status
+: 1710114818:0;git checkout create-react-app -f
+: 1710114879:0;git log --oneline --graph --decorate
+: 1710114914:0;git status
+: 1710114929:0;git clean -fd
+: 1710114933:0;git status
+: 1710114947:0;git checkout main
+: 1710114965:0;git log --oneline --graph --decorate
+: 1710114988:0;git checkout create-react-app
+: 1710114994:0;git log --oneline --graph --decorate
+: 1710115021:0;git checkout 8da
+: 1710115029:0;git checkout 8dac
+: 1710115383:0;npm install bootstrap@5.3.3
+: 1710115426:0;git log --oneline --graph --decorate
+: 1710115436:0;git checkout main -f
+: 1710115447:0;git checkout 8dac
+: 1710116041:0;npm install
+: 1710116383:0;git checkout create-react-app
+: 1710116392:0;git checkout create-react-app -f
+: 1710118523:0;ls
+: 1710118538:0;rm -r src-old
+: 1710118540:0;ls
+: 1710120009:0;cp Dockerfile ../
+: 1710120012:0;cd ..
+: 1710120018:0;mkdir react 
+: 1710120025:0;mv Dockerfile react
+: 1710120028:0;cd react
+: 1710120030:0;ls
+: 1710120034:0;vim Dockerfile
+: 1710120067:0;ls
+: 1710120095:0;docker build -t node-react:1.0 .
+: 1710120124:0;ls
+: 1710120150:0;docker container stop $(docker container ls -qa)
+: 1710120168:0;docker build -t node-react:1.0 .
+: 1710120186:0;docker container ls -a
+: 1710120243:0;docker build -t node-react:1.0 .
+: 1710120502:0;docker run -it --rm -v $(pwd):/app node:18-slim bash
+: 1710120617:0;mv ./react ./node-react
+: 1710120621:0;mv ./react ./node-react -r
+: 1710120638:0;mv ../react ../node-react -r
+: 1710120643:0;mv ../react ../node-react
+: 1710120645:0;ls
+: 1710120654:0;cd ..
+: 1710120656:0;ls
+: 1710120693:0;ls | grep react
+: 1710120698:0;cd node-react
+: 1710120699:0;ls
+: 1710120705:0;docker container ls -a
+: 1710120728:0;docker volume ls
+: 1710120738:0;docker run -it --rm -v $(pwd):/app node:18-slim bash
+: 1710120973:0;ls
+: 1710121046:0;ls -a
+: 1710121048:0;cd ..
+: 1710121049:0;ls
+: 1710121067:0;cd
+: 1710121133:0;cd -
+: 1710121136:0;ls
+: 1710121142:0;cd node-react
+: 1710121144:0;ls
+: 1710121149:0;docker volume ls
+: 1710121152:0;docker volume ls -a
+: 1710121162:0;docker volume ls
+: 1710121363:0;docker container ls 
+: 1710121432:0;docker cp 1761:/node-react .
+: 1710121451:0;ls
+: 1710121457:0;rm -r node-react
+: 1710121466:0;ls
+: 1710121478:0;docker cp 1761:/node-react/* .
+: 1710121616:0;cd ..
+: 1710121622:0;rm -r node-react
+: 1710121623:0;ls
+: 1710121635:0;docker cp 1761:/node-react .
+: 1710121675:0;ls
+: 1710121677:0;cd node-react
+: 1710121678:0;ls
+: 1710121700:0;docker image ls
+: 1710121740:0;ls
+: 1710121755:0;cd ..
+: 1710121756:0;ls
+: 1710121759:0;cd node-react
+: 1710121760:0;ls
+: 1710121800:0;cp ../docker-node-react/Dockerfile Dockerfile
+: 1710121801:0;ls
+: 1710121839:0;cat Dockerfile
+: 1710121924:0;ls
+: 1710121928:0;cat Dockerfile
+: 1710122003:29;docker run -it --name node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 node-react:1.0 sh
+: 1710122043:0;docker build -t node-react:1.0 .
+: 1710122075:0;cat Dockerfile
+: 1710122247:0;ls
+: 1710122252:0;docker container ls
+: 1710122256:0;docker container ls -a
+: 1710122277:0;docker run -it --name node-react -v $(pwd):/usr/src/app -w /usr/src/app -p 3000:3000 node-react:1.0 sh
+: 1710122387:0;ls -a
+: 1710122392:0;ls -1
+: 1710122407:0;ls src -1
+: 1710122418:0;cd src
+: 1710122421:0;ls -1
+: 1710122428:0;cat App.css
+: 1710122461:0;cd ..
+: 1710122465:0;git init
+: 1710122471:0;git status
+: 1710122483:0;vim gitignore
+: 1710122496:0;vim .gitignore
+: 1710122540:0;ls
+: 1710122543:0;git status
+: 1710122548:0;git add .
+: 1710122596:0;git status
+: 1710122606:0;vim .gitignore
+: 1710122620:0;git add .
+: 1710122624:0;git status
+: 1710122655:0;git commit -m "initial commit"
+: 1710122665:0;git log --oneline --graph --decorate
+: 1710122676:0;ls
+: 1710122718:0;git branch bootstrap
+: 1710122747:0;git checkout bootstrap
+: 1710122910:0;ls
+: 1710122913:0;cd src
+: 1710122915:0;ls
+: 1710122919:0;vim index.js
+: 1710123072:0;git status
+: 1710123131:0;ls ../../docker-node-react/src
+: 1710123140:0;mkdir Components
+: 1710123152:0;touch Components/Test.js
+: 1710123163:0;vim Components/Test.js
+: 1710123225:0;vim App.js
+: 1710123393:0;vim Components/Test.js
+: 1710123485:0;vim App.js
+: 1710123527:0;cp Components/Test.js Components/Button.js
+: 1710123537:0;git add .
+: 1710123540:0;git status
+: 1710123546:0;git add .
+: 1710123549:0;git status
+: 1710123569:0;git add ../package-lock.json
+: 1710123580:0;git add ../package.json
+: 1710123582:0;git status
+: 1710123617:0;git commit -m "add bootstrap to the app and create a simple example"
+: 1710123621:0;git status
+: 1710123626:0;git checkout main
+: 1710123684:0;git switch tailwind
+: 1710123700:0;git switch tailwind -c
+: 1710123716:0;git switch -c tailwind
+: 1710123755:0;git status
+: 1710123837:0;ls
+: 1710123840:0;cd ..
+: 1710123841:0;ls
+: 1710123845:0;cat tailwind.config.js
+: 1710123948:0;ls
+: 1710123954:0;cd src
+: 1710123955:0;ls
+: 1710123960:0;vim index.css
+: 1710124052:0;cd src
+: 1710124053:0;ls
+: 1710124064:0;mkdir Components
+: 1710124082:0;touch Components/Button.js
+: 1710124087:0;vim Components/Button.js
+: 1710124148:0;vim App.css
+: 1710124179:0;vim App.js
+: 1710124264:0;vim Components/Button.js
+: 1710124291:0;vim index.js
+: 1710124343:0;git status
+: 1710124358:0;git restore index.css
+: 1710124380:0;vim index.css
+: 1710124402:0;touch tindex.css
+: 1710124420:0;echo "@tailwind base;\
+@tailwind components;\
+@tailwind utilities;" >> tindex.css
+: 1710124423:0;vim tindex.css
+: 1710124431:0;vim index.js
+: 1710163685:0;docker start node-react
+: 1710163761:0;docker exec -it node-react /bin/sh
+: 1710164215:0;cd ..
+: 1710164222:0;git checkout bootstrap
+: 1710164230:0;git status
+: 1710164234:0;git add .
+: 1710164237:0;git status
+: 1710164287:0;vim src/index.js
+: 1710164333:0;vim src/index.css
+: 1710164376:0;mv src/tindex.css src/tailwind.css
+: 1710164380:0;ls
+: 1710164387:0;git status
+: 1710164393:0;git add .
+: 1710164398:0;git status
+: 1710164410:0;vim src/index.js
+: 1710164452:0;ls
+: 1710164470:0;vim src/index.js
+: 1710164503:0;git status
+: 1710164508:0;git add .
+: 1710164512:0;git status
+: 1710164524:0;git log --oneline --graph --decorate
+: 1710164534:0;git branch
+: 1710164547:0;git switch bootstrap
+: 1710164555:0;git status
+: 1710164581:0;git stash list
+: 1710164616:0;git stash save
+: 1710164627:0;git stash list
+: 1710164639:0;git checkout bootstrap
+: 1710164645:0;git log --oneline --graph --decorate
+: 1710164677:0;git checkout tailwind
+: 1710164705:0;git stash pop
+: 1710164719:0;git status
+: 1710164730:0;git add .
+: 1710164738:0;git status
+: 1710164809:0;git commit -m 'add tailwind to the app and create a simple example'
+: 1710164817:0;git status
+: 1710164885:0;git switch -
+: 1710164983:0;ls
+: 1710164999:0;cat package.json
+: 1710165041:0;vim package.json
+: 1710165065:0;ls
+: 1710165124:0;git status
+: 1710165250:0;code .
+: 1710165561:0;touch Components/Shop.jsx
+: 1710165582:0;touch test.ls
+: 1710165588:0;rm test.ls
+: 1710165593:0;ls
+: 1710165611:0;touch src/Components/Shop.jsx
+: 1710165671:0;mv src/Components/Shop.jsx src/Components/Shop.tsx
+: 1710166556:0;touch src/Components/Form.jsx
+: 1710166594:0;mv src/Components/Form.jsx src/Components/Form.tsx
+: 1710167100:0;touch src/Components/Table.tsx
+: 1710179723:0;code .
+: 1710548418:0;cd Sites/node-react
+: 1710548423:0;code .
+: 1710548463:0;cd ~
+: 1710548467:0;docker start node-react
+: 1710548478:0;docker exec -it node-react /bin/sh
+: 1710550221:0;cd Sites/docker-node-react
+: 1710550229:0;ls -a
+: 1710550241:0;ls .vscode
+: 1710550242:0;ls
+: 1710550265:0;cp .vscode ../node-react
+: 1710550315:0;cp .vscode/launch.json ../node-react/.vscode/launch.json
+: 1710550348:0;mkdir ../node-react/.vscode
+: 1710550359:0;cp .vscode/launch.json ../node-react/.vscode/launch.json
+: 1710717323:0;docker start node-react
+: 1710717332:0;docker exec -it node-react /bin/sh
+: 1710717347:0;cd ~
+: 1710717352:0;docker volume ls
+: 1710717403:0;git status
+: 1710717425:0;git add .vscode/
+: 1710717427:0;git status
+: 1710717461:0;git commit -m "add debugger"
+: 1710717464:0;git status
+: 1710717478:0;git add .
+: 1710717532:0;git commit -m "add shop example"
+: 1710717535:0;git status
+: 1710717594:0;touch src/Components/Places.tsx
+: 1710717780:0;touch src/Components/places.js
+: 1711030967:0;docker start node-react
+: 1711030980:0;docker exec -it node-react /bin/sh
+: 1711030990:0;cd Sites/node-react
+: 1711030993:0;code .
+: 1711154784:0;docker start node-react
+: 1711154790:0;docker exec -it node-react /bin/sh
+: 1711154837:0;git status
+: 1711154854:0;git restore .
+: 1711154858:0;git status
+: 1711154868:0;git clean -fd
+: 1711154915:0;touch src/Components/RefForm.js
+: 1716989881:0;ks
+: 1716989884:0;ls
+: 1716989927:0;cd Sites/docker-node-react
+: 1716989930:0;ls
+: 1716989939:0;code .
+: 1716990380:0;cd ..
+: 1716990382:0;ls
+: 1716990387:0;cd node-react
+: 1716990389:0;ls
+: 1716990402:0;code .
+: 1716990466:0;docker exec -it node-react /bin/sh
+: 1716990482:0;docker start node-react
+: 1716990497:0;docker container ls
+: 1716990522:0;ls
+: 1716990527:0;vim Dockerfile
+: 1716990626:0;docker exec -it node-react /bin/sh
+: 1716990872:0;git status
+: 1716990884:0;git log --oneline --graph --decorate
+: 1716990952:0;git chekcout 349
+: 1716990966:0;git checkout 349
+: 1716990991:0;git checkout 349a
+: 1716991297:0;vim db.json
+: 1716991697:0;docker stop $(docker container ls -qa)
+: 1716991713:0;docker start node-react
+: 1716991722:0;docker exec -it node-react /bin/sh
+: 1716993063:0;cd ..
+: 1716993064:0;ls
+: 1716993067:0;mkdir json-server-docker\
+cd json-server-docker\
+
+: 1716993069:0;ls
+: 1716993099:0;touch db.json
+: 1716993107:0;vim db.json
+: 1716993122:0;touch Dockerfile
+: 1716993128:0;vim Dockerfile
+: 1716993242:0;touch package.json
+: 1716993245:0;vim package.json
+: 1716993261:0;docker build -t json-server-docker .\
+
+: 1716993455:0;docker run -p 8888:8888 json-server-docker
+: 1716993521:0;vim Dockerfile
+: 1716993536:0;docker run -p 8888:8888 json-server-docker
+: 1716993605:0;docker build -t json-server-docker .\
+
+: 1716993751:0;docker image ls
+: 1716993783:0;docker run -p 8888:8888 json-server-docker
+: 1716993838:0;vim db.json
+: 1716993930:0;docker container ls
+: 1716993956:0;docker exec -it json-server-docker /bin/sh
+: 1716994073:0;docker container ls
+: 1716994093:0;docker rm -f 2bc
+: 1716994269:0;docker run -p 8888:8888 --name json-server json-server-docker
+: 1716994602:0;ls
+: 1716994606:0;vim db.json
+: 1716994634:0;docker container ls
+: 1716994649:0;docker exec -it json-server /bin/sh
+: 1716994770:0;docker stop json-server
+: 1716994792:0;docker start json-server
+: 1716994841:0;ls
+: 1716994848:0;cat Dockerfile
+: 1716995037:201;docker exec -it json-server /bin/sh
+: 1716995244:0;docker container ls
+: 1716995256:0;docker rm -f json-server
+: 1716995786:0;vim Dockerfile
+: 1716995827:0;docker run -it --name json-server -v $(pwd):/app -w /app -p 8888/8888 json-server-docker sh
+: 1716995950:0;docker run -it --name json-server -v $(pwd):/app -w /app -p 8888/3000 json-server-docker sh
+: 1716995994:0;docker run -it --name json-server -v $(pwd):/app -w /app -p 8888:8888 json-server-docker sh
+: 1716996082:0;ls
+: 1716996085:0;vim db.json
+: 1716996285:0;ls
+: 1716996289:0;vim Dockerfile
+: 1716996317:0;ls
+: 1716996322:0;touch test.txt
+: 1716996329:0;rm test.txt
+: 1716996376:1;docker stop json-server
+: 1716996387:0;docker start json-server
+: 1716996404:0;docker exec -it json-server /bin/sh
+: 1716996477:0;vim db.json
+: 1717067657:0;docker start json-server
+: 1717067669:0;docker exec -it json-server /bin/sh
+: 1717067777:0;cd ~
+: 1717067780:0;cd Sites
+: 1717067800:0;docker start node-react
+: 1717067826:0;docker container ls
+: 1717067850:0;docker exec -it node-react /bin/sh
+: 1717069875:0;touch src/Components/Navbar.js
+: 1717071320:0;code .
+: 1717071397:0;git status
+: 1717071406:0;git restore .
+: 1717071412:0;git status
+: 1717071430:0;git clean -fd
+: 1717071483:0;npm install react-router-dom
+: 1717071693:0;touch src/Components/Navbar.jsx
+: 1717072273:0;touch src/Components/Users.jsx
+: 1717072370:0;mv src/Components/Users.jsx src/Components/Users.tsx
+: 1717073018:0;npm install axios
+: 1717073037:0;axios -v
+: 1717076133:0;npm install @tanstack/react-query
+: 1717671650:0;docker container ls
+: 1717671653:0;docker container ls -a
+: 1717671667:0;docker start node-react
+: 1717671677:0;docker start json-server
+: 1717671702:0;docker container ls
+: 1717671709:0;docker exec -it node-react /bin/sh
+: 1717671865:0;$ npx json-server db.json
+: 1717671877:0;npx json-server db.json
+: 1717671907:0;ls
+: 1717671918:0;cat package.json
+: 1717671974:0;docker contaienr ls
+: 1717671982:0;docker container ls
+: 1717672017:0;cat db.json
+: 1717672023:0;cat Dockerfile
+: 1717673968:0;ls
+: 1717673983:0;open . -a vscode
+: 1717674002:0;open . -a Visual Studio Code
+: 1717674028:0;open . -a VisualStudioCode
+: 1717674161:0;code .
+: 1717675249:0;docker exec -it node-react /bin/sh
+: 1717676593:1;code .
+: 1717676972:0;docker exec -it node-react /bin/sh
+: 1717671724:0;docker exec -it json-server /bin/sh
+: 1718190961:0;docker container ls -a
+: 1718191061:0;docker rm 20d6
+: 1718191066:0;docker container ls -a
+: 1718191077:0;docker rm 09ed
+: 1718191080:0;docker container ls -a
+: 1718191148:0;docker rm 5b53
+: 1718191154:0;docker container ls -a
+: 1718191223:0;docker start node-react
+: 1718191231:0;docker start json-server
+: 1718191238:0;docker exec -it node-react /bin/sh
+: 1718191253:0;docker exec -it json-server /bin/sh
+: 1718191967:0;eee
+: 1718192488:0;aaf
+: 1718192537:0;asdf
+: 1718202768:0;ls
+: 1718202793:0;touch src/Components/Button.tsx
+: 1718202803:0;ls src/Components
+: 1718203223:0;touch src/Components/Test.tsx
+: 1718204635:0;docker exec -it node-react /bin/sh
+: 1718210285:0;git status
+: 1718210290:0;git log --oneline --graph --decorate
+: 1718210319:0;git status
+: 1718210328:0;git stash list
+: 1718210360:0;git stash save --include-untracked "Stashing only unstaged changes"
+: 1718210364:0;git status
+: 1718210376:0;git stash list
+: 1718210394:0;git log --oneline --graph --decorate
+: 1718210409:0;git checkout 6425
+: 1718210416:0;ls
+: 1718210425:0;git diff HEAD~
+: 1718210595:0;git checkout -
+: 1718210604:0;git log --oneline --graph --decorate
+: 1718210642:0;git stash list
+: 1718210720:0;git stash show
+: 1718210759:0;git stash list
+: 1718210770:0;git stash apply stash@{0}
+: 1718210920:0;git status
+: 1718210951:0;code .
+: 1718211044:0;git status
+: 1718211091:0;git diff HEAD~ src/index.js
+: 1718211123:0;git diff HEAD src/index.js
+: 1718211153:0;git status
+: 1718211252:0;git stash list
+: 1718211303:0;git stash pop stash@\{0\}
+: 1718211318:0;git stash list
+: 1718211341:0;git statush
+: 1718211345:0;git status
+: 1718211476:0;code .
+: 1718211894:0;docker container stop node-react
+: 1718211929:0;docker start json-server
+: 1718211947:0;docker container start node-react
+: 1718211957:0;docker exec -it node-react /bin/sh
+: 1718212440:0;git status
+: 1718212450:0;git restore .
+: 1718212454:0;git status
+: 1718212466:0;git clean -fd
+: 1718212473:0;git status
+: 1718212478:0;git stash list
+: 1718212483:0;git pop
+: 1718212489:0;git stash pop
+: 1718212498:0;git stash list
+: 1718212644:0;touch src/Components/Alert.tsx
+: 1718290980:0;docker container node-react start
+: 1718291000:0;docker container start node-react
+: 1718291090:0;docker container ls | grep json
+: 1718291105:0;docker container ls -a | grep json
+: 1718291116:0;docker container start json-server
+: 1718291134:0;docker exec -it json-server /bin/sh
+: 1718291289:0;code .
+: 1718291126:0;docker exec -it node-react /bin/sh
+: 1718311034:0;docker container start node-react
+: 1718311046:0;docker container start json-server
+: 1718311056:0;docker exec -it node-react /bin/sh
+: 1718311063:0;docker exec -it json-server /bin/sh
+: 1718317071:0;docker exec -it node-react /bin/sh
+: 1718317195:0;rm src/Components/MyButton.tsx src/Components/Alert.tsx
+: 1718447935:0;docker container start node-react
+: 1718447951:0;docker container start json-server
+: 1718447964:0;docker exec -it node-react /bin/sh
+: 1718447971:0;docker exec -it json-server /bin/sh
+: 1718448288:0;touch src/Components/Spinner/Spinner.tsx
+: 1718448292:0;touch src/Components/Spinner/Spinner.css
+: 1718450270:0;docker exec -it node-react /bin/sh
+: 1718886478:0;docker container start node-react
+: 1718886495:0;docker container start json-server
+: 1718886505:0;docker exec -it node-react /bin/sh
+: 1718886528:0;docker exec -it json-server /bin/sh
+: 1719264011:0;docker container start json-server
+: 1719264024:0;docker container start node-react
+: 1719264049:0;docker container ls -a
+: 1719264053:0;docker container ls
+: 1719264076:0;docker exec -it node-react /bin/sh
+: 1719264092:0;docker exec -it json-server /bin/sh
+: 1719599014:0;docker container ls -a
+: 1719599022:0;docker container start node-react
+: 1719599033:0;docker container start json-server
+: 1719599045:0;docker exec -it node-react /bin/sh
+: 1719599050:0;docker exec -it json-server /bin/sh
+: 1719599163:0;code .
+: 1719603305:0;npm install react-hook-form@7.43 zod @hookform/resolvers
+: 1719603347:0;node -v
+: 1719610991:0;npm install @hookform/resolvers@2.9.11
+: 1719674343:0;docker container ls -a
+: 1719674355:0;docker container start json-server
+: 1719674365:0;docker container start node-react
+: 1719674389:0;docker exec -it node-react /bin/sh
+: 1719674416:0;docker exec -it json-server /bin/sh
+: 1719696926:0;docker container ls -a
+: 1719696946:0;docker container start json-server
+: 1719696958:0;docker container start node-react
+: 1719696976:0;docker exec -it node-react /bin/sh
+: 1719697000:0;docker exec -it json-server /bin/sh
+: 1719697064:0;code .
+: 1719828532:0;docker container start json-server
+: 1719828543:0;docker container start node-react
+: 1719828556:0;docker container stop json-server
+: 1719828571:0;docker container ls
+: 1719828591:0;docker exec -it node-react /bin/sh
+: 1724703695:0;ls
+: 1724703718:0;git log --oneline --graph --decorate
+: 1724703740:0;git checkout ~
+: 1724703766:0;git checkout bootstrap
+: 1724703779:0;git status
+: 1724703810:0;git restore .
+: 1724703822:0;git clean -fd
+: 1724703828:0;git status
+: 1724703838:0;code .
+: 1724704012:0;docker start node-react
+: 1724704017:0;docker start json-server
+: 1724704023:0;docker exec -it node-react /bin/sh
+: 1724704152:0;docker exec -it json-server /bin/sh
+: 1724706398:0;git checkout bootstrap
+: 1724706408:0;docker container ls
+: 1724706667:0;npm i @tanstack/react-query
+: 1724706849:0;code .
+: 1724706945:0;touch src/Components/Test.jsx
+: 1724706984:0;mv src/Components/Test.jsx src/Components/Test.tsx
+: 1724707510:0;axios --v
+: 1724707524:0;npm i axios
+: 1724709160:0;npm i @tanstack/react-query-devtools\
+
+: 1724710880:0;docker container ls
+: 1724749892:0;ls
+: 1724749896:0;cd Sites
+: 1724749897:0;ls
+: 1724750354:0;cd node-react
+: 1724750366:0;docker start node-react
+: 1724750393:0;docker start json-server
+: 1724750398:0;docker container ls
+: 1724750420:0;cd ../json-server-docker
+: 1724750421:0;ls
+: 1724750430:0;docker exec -it json-server /bin/sh
+: 1724750488:0;docker exec -it node-react /bin/sh
+: 1724750866:0;code .
+: 1725453393:0;docker container ls
+: 1725453397:0;docker container ls -a
+: 1725453411:0;docker start json-server
+: 1725453419:0;docker start node-react
+: 1725453433:0;docker exec -it json-server /bin/sh
+: 1725453766:0;docker exec -it node-react /bin/sh
+: 1725453941:0;git status
+: 1725453953:0;git restore .
+: 1725453976:0;git clean -fd
+: 1725454088:0;touch src/Components/Test.tsx
+: 1725454111:0;rm src/Components/Button.js
+: 1725454469:0;npm i @tanstack/react-query
+: 1725454557:0;npm i @tanstack/react-query-devtools\
+
+: 1725458854:0;npm i axios
+: 1725461919:0;vim src/Components/Test.tsx
+: 1725461998:0;ls
+: 1725462008:0;vim src/Components/Test.tsx
+: 1725483466:0;docker start json-server
+: 1725483476:0;docker start node-react
+: 1725483490:0;docker exec -it node-react /bin/sh
+: 1725483497:0;docker exec -it json-server /bin/sh
+: 1725486680:0;touch src/hooks/useComments.ts
+: 1725487611:0;npm run build
+: 1725488650:0;npm install --save typescript @types/node @types/react @types/react-dom\
+
+: 1725488685:0;npx tsc --init\
+
+: 1725489504:0;touch src/hooks/useDeleteComments.ts
+: 1725530266:0;docker start json-server 
+: 1725530274:0;docker start node-react
+: 1725530284:0;docker exec -it node-react /bin/sh
+: 1725530292:0;docker start json-server
+: 1725530298:0;docker exec -it json-server /bin/sh
+: 1725530544:0;code .
+: 1725538246:0;touch src/services/apiClient.ts
+: 1725548370:0;docker start node-react
+: 1725548378:0;docker start json-server
+: 1725548383:0;docker exec -it json-server /bin/sh
+: 1725548396:0;docker exec -it node-react /bin/sh
+: 1725548452:0;docker exec -it json-server /bin/sh
+: 1725632863:0;docker start node-react
+: 1725632870:0;docker start json-server
+: 1725632878:0;docker exec -it json-server /bin/sh
+: 1725632910:0;docker exec -it node-react /bin/sh
+: 1725632925:0;code .
+: 1725714137:0;docker start json-server
+: 1725714150:0;docker start node-react
+: 1725714158:0;docker exec -it node-react /bin/sh
+: 1725714170:0;docker exec -it json-server /bin/sh
+: 1725714500:0;touch src/hooks/useEditComment.ts
+: 1725723936:0;ls
+: 1725723939:0;vim db.json
+: 1725874555:0;docker start json-server
+: 1725874563:0;docker start node-react
+: 1725874572:0;docker exec -it json-server /bin/sh
+: 1725874997:0;docker exec -it node-react /bin/sh
+: 1725875922:0;touch src/hooks/usePaginatedComments.ts
+: 1726049603:0;ls
+: 1726049629:0;cls
+: 1726049631:0;clean
+: 1726049634:0;cl
+: 1726049661:0;docker start node-react
+: 1726049670:0;docker start json-server
+: 1726049698:0;docker exec -it json-server /bin/sh
+: 1726049729:0;docker exec -it node-react /bin/sh
+: 1726049930:0;code .
+: 1726584323:0;docker container start json-server
+: 1726584337:0;docker exec -it json-server /bin/sh
+: 1726584383:0;docker container start node-react bin/sh
+: 1726584394:0;docker container start node-react
+: 1726584419:0;docker exec node-react bin/sh
+: 1726584428:0;docker exec -it json-server /bin/sh
+: 1726584644:0;docker exec -it node-react /bin/sh
+: 1726585196:0;mv src/Components/Test.tsx src/Components/Comments.tsx
+: 1726586082:0;touch src/Components/Test.tsx
+: 1726586467:0;npm build
+: 1726586476:0;npm run build
+: 1726587058:0;npm install
+: 1726652875:0;docker container start json-server
+: 1726652886:0;docker container start node-react
+: 1726652906:0;docker exec -it node-react bin/sh
+: 1726652937:0;docker exec -it node-react /bin/sh
+: 1726652965:0;docker exec -it json-server /bin/sh
+: 1726653148:0;docker exec node-react npm install zustand
+: 1726653451:0;docker exec node-react npm install react-scripts@latest
+: 1726653535:0;docker exec node-react npm install react-scripts@latest --legacy-peer-deps\
+
+: 1726653593:0;docker exec node-react npm install zustand
+: 1726653643:0;docker exec node-react npm install react-scripts@latest --force\
+
+: 1726653860:0;docker exec node-react rm -rf node_modules package-lock.json\
+
+: 1726654014:0;docker exec -it node-react /bin/sh
+: 1726655132:0;curl https://www.jsonplaceholder.typicode.com/posts
+: 1726655143:0;curl https://jsonplaceholder.typicode.com/posts
+: 1726655954:0;zustand --version
+: 1726656009:0;npm list zustand
+: 1726656036:0;mkdir src/store
+: 1726656072:0;touch src/store/Person.ts
+: 1726659177:0;npm install zustand zustand/middleware\
+
+: 1726667814:0;docker container start json-server
+: 1726667825:0;docker container start node-react
+: 1726667855:0;docker exec -it json-server /bin/sh
+: 1726667912:0;docker exec -it node-react /bin/sh
+: 1726673156:0;echo $DB_USER
+: 1726673180:0;ls ~
+: 1726673210:0;vim ~/.bashrc
+: 1726673246:0;echo DB_USER
+: 1726673283:0;vim ~/.bashrc
+: 1726673335:0;source ~/.bashrc
+: 1726673339:0;echo DB_USER
+: 1726673353:0;echo $DB_USER
+: 1726673375:0;vim ~/.zshrc
+: 1726743559:0;docker container start json-server
+: 1726743567:0;docker container start react-node
+: 1726743577:0;docker container start node-react
+: 1726743595:0;docker exec -it json-server /bin/sh
+: 1726743639:0;docker exec -it node-react /bin/sh
+: 1726744007:0;mv src/store/Person.ts src/store/usePersonStore.ts
+: 1726785880:0;..
+: 1726785882:0;ls
+: 1726785925:0;mkdir wordle-react
+: 1726785938:0;cd wordle-react
+: 1726786005:0;cp ../node-react/Dockerfile Dockerfile
+: 1726786006:0;ls
+: 1726786017:0;vim Dockerfile
+: 1726786156:0;docker build -t wordle-react .\
+
+: 1726786167:0;vim Dockerfile
+: 1726786233:0;docker image ls
+: 1726786262:0;docker container ls
+: 1726786264:0;docker container ls =a
+: 1726786267:0;docker container ls -a
+: 1726786331:0;docker exec -it docker-node-react /bin/sh
+: 1726786344:0;docker start docker-node-react
+: 1726786348:0;docker exec -it docker-node-react /bin/sh
+: 1726786409:0;cd ../docker-node-react
+: 1726786411:0;ls
+: 1726786422:0;cd ..
+: 1726786435:0;rm -r docker-node-react
+: 1726786474:0;sudo rm -r docker-node-react
+: 1726786478:0;ls
+: 1726786504:0;sudo rm -r docker-node-react-old
+: 1726786517:0;ls
+: 1726786526:0;ls src
+: 1726786534:0;rm -r src
+: 1726786536:0;ls
+: 1726786540:0;ls -1
+: 1726786549:0;rm -r fonts
+: 1726786558:0;sudo rm -r fonts
+: 1726786559:0;ls
+: 1726786561:0;ls -1
+: 1726786615:0;docker container ls -a
+: 1726786674:0;docker container rm node
+: 1726786693:0;docker container rm docker-node-react
+: 1726786708:0;docker container stop docker-node-react
+: 1726786723:0;docker container rm docker-node-react
+: 1726786727:0;docker container ls
+: 1726786731:0;docker container ls -a
+: 1726787097:0;ls
+: 1726787102:0;ls node-react
+: 1726787203:0;cd wordle-react
+: 1726787204:0;ls
+: 1726787284:0;vim Dockerfile
+: 1726787611:0;ls
+: 1726787616:0;rm Dockerfile
+: 1726787618:0;ls
+: 1726787623:0;docker container ls -a
+: 1726787638:0;docker container ls
+: 1726787653:0;docker run --rm -it -v $(pwd):/app -w /app node:alpine sh
+: 1726787723:0;ls
+: 1726788140:0;docker container ls
+: 1726788152:0;node --version
+: 1726788159:0;npm start
+: 1726788290:0;docker run --rm -it -v $(pwd):/app -w /app -p 3000:3000 node:alpine sh
+: 1726788352:0;code .
+: 1726788587:0;cd ../node-react
+: 1726788588:0;ls
+: 1726788598:0;docker run --rm -it -v $(pwd):/app -w /app -p 3000:3000 node:alpine sh
+: 1726788771:0;ls
+: 1726789114:0;touch design.txt
+: 1726789145:0;mv design.txt design.js
+: 1726789374:0;docker run --rm -it -v $(pwd):/app -w /app -p 3000:3000 node:alpine sh\
+
+: 1726838351:0;ls
+: 1726838369:0;docker run --rm -it -v $(pwd):/app -w /app -p 3000:3000 node:alpine sh\
+
+: 1726838382:0;code .
+: 1726839851:0;git init
+: 1726839858:0;git status
+: 1726840081:0;git commit -m "initial commit"
+: 1726840084:0;git add .
+: 1726840086:0;git commit -m "initial commit"
+: 1726840091:0;git status
+: 1726840105:0;git log --oneline --graph --decorate
+: 1726840366:0;git remote add origin https://github.com/petritmekuli/wordle-react.git\
+git branch -M main\
+git push -u origin main
+: 1726840422:0;git branch ls
+: 1726840428:0;git branch 
+: 1726840453:0;git branch --help
+: 1726840509:0;git branch -d ls
+: 1726840513:0;git branch
+: 1726840524:0;git branch wordle
+: 1726840529:0;git checkout wordle
+: 1726840855:0;touch src/hooks/useWordle.ts
+: 1726840888:0;mkdir src/hooks && touch src/hooks/useWordle.ts
+: 1726864834:0;docker container ls -a
+: 1726864900:0;docker run --rm -it -v $(pwd):/app -w /app -p 3000:3000 node:alpine /bin/sh
+: 1726869570:0;cp ../node-react/.vscode/launch.json .vscode/launch.json
+: 1726914666:0;code .
+: 1726914677:0;docker run --rm -it -v $(pwd):/app -w /app -p 3000:3000 node:alpine /bin/sh
+: 1727083626:0;docker containe ls -a
+: 1727083630:0;docker container ls
+: 1727084153:0;touch src/components/Wordle.tsc
+: 1727084164:0;mkdir src/components
+: 1727084178:0;touch src/components/Wordle.tsx
+: 1727084467:0;touch src/components/Test.tsx
+: 1727094562:0;touch src/hooks/useWordle.ts
+: 1727119348:0;docker run --rm -it -v $(pwd):/app -w /app -p 3000:3000 node:alpine /bin/sh
+: 1727261310:0;code .
+: 1727299903:0;docker run --rm -it -v $(pwd):/app -w /app -p 3000:3000 node:alpine /bin/sh
+: 1727299910:0;docker container ls
+: 1727299954:0;docker exec -it 1a09 /bin/sh
+: 1727348035:0;docker run --rm -it -v $(pwd):/app -w /app -p 3000:3000 node:alpine /bin/sh
+: 1727348256:0;rm src/hooks/useWordle.ts
+: 1727348285:0;mv src/hooks/useWordle2.ts src/hooks/useWordle.ts
+: 1727352416:0;docker container ls
+: 1727352438:0;docker exec -it ac6a /bin/sh
+: 1727432908:0;..
+: 1727432916:0;cd node-react/src
+: 1727432917:0;ls
+: 1727432926:0;cd hooks
+: 1727432927:0;ls
+: 1727432938:0;cd ..
+: 1727432940:0;ls
+: 1727432951:0;vim App.tsx
+: 1727432963:0;vim Test.tsx
+: 1727432969:0;cd Components
+: 1727432975:0;vim Test.tsx
+: 1727433010:0;cd ../hooks
+: 1727433012:0;ls
+: 1727433027:0;vim useDeleteComment.ts
+: 1727433037:0;vim usePaginatedComments.ts
+: 1727433052:0;vim useAddComment.ts
+: 1727473976:0;docker run --rm -it -v $(pwd):/app -w /app -p 3000:3000 node:alpine /bin/sh
+: 1727478746:0;touch src/components/WordleKeyboard.tsx
+: 1727481280:0;vim ~/Sites/wordle-react/src/components/Wordle.tsx
+: 1727482565:0;touch src/components/WordleAlert.tsx
+: 1727963434:0;cd Sites/wordle-react
+: 1727963437:0;code .
+: 1727963474:0;touch test.html
+: 1727963603:0;open .
+: 1728298677:0;docker container ls -a
+: 1728298734:0;docker run --rm -it -v $(pwd):/app -w /app -p 3000:3000 node:alpine /bin/sh
+: 1728298812:0;cd Sites/wordle-react
+: 1728298819:0;docker container ls 
+: 1728298831:0;docker run --rm -it -v $(pwd):/app -w /app -p 3000:3000 node:alpine /bin/sh
+: 1728299711:0;code .
+: 1728300180:0;cat package.json
+: 1728300196:0;cat package.json | grep tailwind
+: 1728301579:0;code .
+: 1728301614:0;touch test.html
+: 1728301988:0;pwd
+: 1728304211:0;cat package.json | grep bootstrap
+: 1728325112:0;docker run --rm -it -v $(pwd):/app -w /app -p 3000:3000 node:alpine /bin/sh
+: 1728333359:0;cat package.json | grep tanstack
+: 1728333393:0;docker container ls 
+: 1728333413:0;docker exec -it 812f /bin/sh
+: 1728333935:0;cat package.json | grep axios
+: 1728334001:0;docker container ls -a
+: 1728334029:0;docker start json-server
+: 1728334034:0;docker container ls
+: 1728334110:0;cat ~/.zsh_history | grep cmd 
+: 1728334157:0;cat ~/.zsh_history > grep cmd 

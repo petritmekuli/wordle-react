@@ -1,7 +1,14 @@
 import "./App.css";
+import Test from "./components/Test";
+import Wordle from "./components/Wordle";
 
 function App() {
-  return <div className="App">Wordle game</div>;
+  return (
+    <>
+      <Wordle />
+      {/* <Test /> */}
+    </>
+  );
 }
 
 export default App;
